@@ -2,30 +2,24 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { IMAGES } from '../images';
 
 const Footer: React.FC = () => {
-  // Updated Vector Logo Component for Footer matching the reference image
+  // Updated to use the image logo (same as Navbar)
+  // Added bg-white and padding to ensure visibility on dark background
   const Logo = () => (
-    <div className="flex items-center gap-4 group">
-      <div className="w-12 h-12 bg-red-bright flex items-center justify-center rounded-full shrink-0 shadow-lg">
-        <span className="text-white font-black text-2xl tracking-tighter select-none leading-none pt-0.5">BI</span>
-      </div>
-      <div className="flex flex-col leading-none">
-        <span className="text-2xl font-black tracking-tighter text-white select-none">
-          BUSTILLO
-        </span>
-        <span className="text-[11px] font-black tracking-[0.25em] text-slate-400 select-none">
-          INGENIERÍA SAS
-        </span>
-      </div>
-    </div>
+    <img 
+      src={IMAGES.logo} 
+      alt="Bustillo Ingeniería SAS" 
+      className="h-16 w-auto object-contain bg-white p-2 rounded-sm"
+    />
   );
 
   return (
     <footer className="bg-[#1A1A1A] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 border-b border-white/5 pb-12">
-          {/* Brand Info with New Vector Logo */}
+          {/* Brand Info with Image Logo */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="mb-8">
               <Link to="/" className="inline-block transition-transform hover:scale-105">
@@ -90,8 +84,9 @@ const Footer: React.FC = () => {
                   <Mail className="text-maroon-corp" size={16} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="break-all lowercase text-[11px] tracking-normal mb-1">gerencia@bustilloingenieria.com</span>
-                  <span className="break-all lowercase text-[11px] tracking-normal">proyectos.cartagena@bustilloingenieria.com</span>
+                  {/* Increased font size from text-[11px] to text-sm */}
+                  <span className="break-all lowercase text-sm tracking-normal mb-1">gerencia@bustilloingenieria.com</span>
+                  <span className="break-all lowercase text-sm tracking-normal">proyectos.cartagena@bustilloingenieria.com</span>
                 </div>
               </div>
             </div>
