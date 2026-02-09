@@ -14,6 +14,7 @@ const About: React.FC = () => {
                 src={IMAGES.about.hero} 
                 alt="Fondo Nosotros" 
                 className="w-full h-full object-cover opacity-40 mix-blend-multiply grayscale"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-maroon-corp via-maroon-corp/80 to-transparent"></div>
         </div>
@@ -37,7 +38,7 @@ const About: React.FC = () => {
                     Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería civil y mantenimiento industrial de alta confiabilidad.
                 </p>
                 <p>
-                    A lo largo de 29 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso, Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Kaeser, Lhoist, Ajover, ISA Y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
+                    A lo largo de 29 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso y Gecelca, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-px bg-slate-100 mt-12 border border-slate-100">
@@ -57,6 +58,10 @@ const About: React.FC = () => {
                         src={IMAGES.about.history} 
                         alt="Historia de la empresa" 
                         className="w-full grayscale hover:grayscale-0 transition-all duration-500"
+                        onError={(e) => {
+                          // Fallback to a placeholder if image is missing
+                          e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 600'%3E%3Crect fill='%23dddddd' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%23555555'%3EImagen No Disponible%3C/text%3E%3C/svg%3E";
+                        }}
                     />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-bright -z-0"></div>
