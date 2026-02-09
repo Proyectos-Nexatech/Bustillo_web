@@ -22,7 +22,7 @@ export const IMAGES = {
     // Foto de cabecera de la página Nosotros
     hero: 'images/Nosotros.png',
     // Foto de la sección "Nuestra Trayectoria"
-    history: '/images/Nosotros.png',
+    history: 'images/Nosotros.png',
   },
   services: {
     // Fotos para cada tarjeta de servicio
