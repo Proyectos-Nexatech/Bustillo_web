@@ -8,8 +8,8 @@ import { ChevronRight, Award, ShieldCheck } from 'lucide-react';
 const Home: React.FC = () => {
   return (
     <div className="bg-white">
-      {/* Hero Section - Adjusted height to fill screen exactly below navbar */}
-      <section className="relative min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
+      {/* Hero Section - Using dvh for better mobile browser support (address bar handling) */}
+      <section className="relative w-full min-h-[calc(100vh-5rem)] min-h-[calc(100dvh-5rem)] md:min-h-[calc(100vh-6rem)] md:min-h-[calc(100dvh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
         <div className="absolute inset-0 z-0">
           <img 
             src={IMAGES.home.hero} 
