@@ -38,7 +38,7 @@ const About: React.FC = () => {
                     Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería civil y mantenimiento industrial de alta confiabilidad.
                 </p>
                 <p>
-                    A lo largo de 29 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso y Gecelca, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
+                    A lo largo de 29 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso y Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Kaeser, Lhoist, Ajover, ISA y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-px bg-slate-100 mt-12 border border-slate-100">
