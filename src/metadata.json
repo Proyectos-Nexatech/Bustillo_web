@@ -1,0 +1,7 @@
+{
+  "name": "Bustillo Ingeniería SAS",
+  "description": "Sitio web corporativo de Bustillo Ingeniería SAS, especialistas en soluciones integrales de ingeniería con más de 29 años de experiencia en obras civiles, metalmecánica y servicios industriales.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
