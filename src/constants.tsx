@@ -66,13 +66,13 @@ export const SERVICES: Service[] = [
   },
   {
     id: 'valves',
-    title: 'Mantenimiento de Válvulas y Calibración de Instrumentos',
+    title: 'Mantenimiento y Pruebas de Válvulas y Calibración de Instrumentos',
     category: 'industrial',
     icon: 'Gauge',
     description: 'Aseguramiento metrológico y operatividad de elementos de control.',
     image: IMAGES.services.valves,
     details: [
-      'Mantenimiento de válvulas de control y alivio (PSV)',
+      'Mantenimiento de válvulas Manuales, de control y alivio (PSV)',
       'Calibración de transmisores y manómetros',
       'Diagnóstico y reparación en sitio',
       'Certificación con patrones trazables'
