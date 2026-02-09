@@ -7,8 +7,6 @@ import {
   Truck, 
   Map, 
   Droplets, 
-  Award,
-  Calendar,
   Building2,
   Users,
   Gauge

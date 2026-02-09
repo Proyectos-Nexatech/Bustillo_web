@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { IMAGES } from '../images';
 import { MapPin, Briefcase } from 'lucide-react';
 
 const Projects: React.FC = () => {

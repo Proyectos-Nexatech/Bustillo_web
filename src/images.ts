@@ -10,35 +10,35 @@
 
 export const IMAGES = {
   // Logo de la empresa
-  logo: '/images/Logo Bustillo.png', 
+  logo: 'images/Logo Bustillo.png', 
 
   home: {
     // Foto de portada principal
-    hero: '/images/hero.jpg', 
+    hero: 'images/hero.jpg', 
     // Foto de la sección "Liderazgo Técnico"
-    team: '/images/calidad.png',
+    team: 'images/calidad.png',
   },
   about: {
     // Foto de cabecera de la página Nosotros
-    hero: '/images/Nosotros.png',
+    hero: 'images/Nosotros.png',
     // Foto de la sección "Nuestra Trayectoria"
     history: '/images/Nosotros.png',
   },
   services: {
     // Fotos para cada tarjeta de servicio
-    civil: '/images/Foto-Obras-civiles.png',
-    metal: '/images/Metalmecanica.png',
-    electric: '/images/Electricidad_Instrumentacion.png',
-    earth: '/images/Movimiento_Tierras.png',
-    topo: '/images/Topografia.png',
-    machinery: '/images/Maquinaria.png',
-    valves: '/images/calibracion.png',
+    civil: 'images/Foto-Obras-civiles.png',
+    metal: 'images/Metalmecanica.png',
+    electric: 'images/Electricidad_Instrumentacion.png',
+    earth: 'images/Movimiento_Tierras.png',
+    topo: 'images/Topografia.png',
+    machinery: 'images/Maquinaria.png',
+    valves: 'images/calibracion.png',
   },
   projects: {
     // Fotos de la galería de proyectos - Nombres descriptivos para evitar confusión
-    heapLeaching: '/images/heap_leaching_cordoba.png',
-    maintenance: '/images/Gecelca.jpg',
-    library: '/images/library.jpg',
-    paving: '/images/paving.jpg',
+    heapLeaching: 'images/heap_leaching_cordoba.png',
+    maintenance: 'images/Gecelca.jpg',
+    library: 'images/library.jpg',
+    paving: 'images/paving.jpg',
   }
 };

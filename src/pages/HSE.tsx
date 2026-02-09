@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Shield, Leaf, HeartPulse, UserCheck, AlertTriangle, FileText, ChevronRight } from 'lucide-react';
+import { Shield, Leaf, HeartPulse, UserCheck, AlertTriangle, FileText } from 'lucide-react';
 
 const HSE: React.FC = () => {
   return (
