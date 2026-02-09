@@ -8,19 +8,23 @@ import { ChevronRight, Award, ShieldCheck } from 'lucide-react';
 const Home: React.FC = () => {
   return (
     <div className="bg-white">
-      {/* Hero Section - Fixed with solid fallback and stable gradient */}
-      <section className="relative h-[85vh] flex items-center overflow-hidden bg-maroon-corp">
+      {/* Hero Section - Adjusted height to fill screen exactly below navbar */}
+      <section className="relative min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
         <div className="absolute inset-0 z-0">
           <img 
             src={IMAGES.home.hero} 
             alt="Ingeniería Industrial" 
             className="w-full h-full object-cover grayscale-[20%] contrast-[1.1] opacity-60"
+            onError={(e) => {
+              // Hide image on error to show the maroon background
+              e.currentTarget.style.display = 'none';
+            }}
           />
           {/* Custom class 'hero-gradient' from index.html for cross-browser stability */}
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full py-12 md:py-0">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 bg-red-bright text-white px-4 py-1 rounded-sm font-black text-xs uppercase tracking-widest mb-6">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span> 29 Años de Experiencia
@@ -100,11 +104,15 @@ const Home: React.FC = () => {
             </div>
             
             <div className="lg:w-1/2 relative">
-              <div className="relative z-10 p-4 bg-white shadow-2xl">
+              <div className="relative z-10 p-4 bg-white shadow-2xl bg-slate-100 min-h-[300px]">
                 <img 
                   src={IMAGES.home.team} 
                   alt="Equipo Bustillo" 
                   className="w-full aspect-video object-cover"
+                  onError={(e) => {
+                    // Hide if missing, keeps the container which has background color
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
               </div>
               <div className="absolute -bottom-10 -right-10 w-full h-full bg-maroon-corp -z-0 opacity-10"></div>
