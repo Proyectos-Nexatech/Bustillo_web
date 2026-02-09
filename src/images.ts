@@ -33,6 +33,8 @@ export const IMAGES = {
     topo: 'images/Topografia.png',
     machinery: 'images/Maquinaria.png',
     valves: 'images/calibracion.png',
+    // Nueva imagen para sección de Gestión de Proyectos
+    management: 'images/proyectos.png',
   },
   projects: {
     // Fotos de la galería de proyectos - Nombres descriptivos para evitar confusión

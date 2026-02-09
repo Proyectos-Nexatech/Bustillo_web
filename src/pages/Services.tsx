@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { SERVICES, ICON_MAP } from '../constants';
+import { IMAGES } from '../images';
 import { Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   return (
@@ -26,6 +26,10 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20 md:space-y-32">
             {SERVICES.map((service, index) => {
+              // Map service IDs to the keys in IMAGES.services
+              const serviceKey = service.id as keyof typeof IMAGES.services;
+              const imageSrc = IMAGES.services[serviceKey] || IMAGES.services.civil; // Fallback
+
               return (
                 <div 
                   key={service.id} 
@@ -54,9 +58,10 @@ const Services: React.FC = () => {
                   <div className="w-full lg:w-1/2 relative">
                     <div className="p-2 md:p-4 bg-white shadow-xl relative z-10 overflow-hidden border border-slate-100">
                       <img 
-                        src={service.image} 
+                        src={imageSrc} 
                         alt={service.title} 
                         className="w-full h-[300px] md:h-[450px] object-cover hover:scale-110 transition-transform duration-[2000ms]"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
                       />
                     </div>
                     <span className="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 text-[100px] md:text-[180px] font-black text-slate-100 -z-0 leading-none pointer-events-none opacity-50">
@@ -95,14 +100,17 @@ const Services: React.FC = () => {
               </ul>
             </div>
             <div className="w-full lg:w-1/2">
-                <div className="bg-white/10 p-1">
-                    <div className="bg-[#330104] p-8 md:p-12 text-center flex flex-col items-center justify-center border border-white/10">
-                        <div className="text-5xl md:text-7xl font-black text-red-bright mb-4">PMI</div>
-                        <div className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] mb-8">Project Management Excellence</div>
-                        <Link to="/contacto" className="bg-white text-maroon-corp px-8 md:px-10 py-3 md:py-4 font-black text-[10px] md:text-xs uppercase tracking-widest hover:bg-red-bright hover:text-white transition-all">
-                            SABER MÁS
-                        </Link>
-                    </div>
+                <div className="relative p-2 bg-white/10 border border-white/20 shadow-2xl">
+                    <img 
+                        src={IMAGES.services.management} 
+                        alt="Gestión de Proyectos - Control Total" 
+                        className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                        onError={(e) => { 
+                            // Fallback visual si falla la carga
+                            e.currentTarget.style.opacity = '0.5'; 
+                        }} 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
                 </div>
             </div>
           </div>
