@@ -176,5 +176,5 @@ export const ICON_MAP: Record<string, React.ReactNode> = {
   Droplets: <Droplets className="w-8 h-8" />,
   Building2: <Building2 className="w-8 h-8" />,
   Users: <Users className="w-8 h-8" />,
-  Gauge: <Gauge className="w-8 h-8" />
+  PencilRuler: <PencilRuler className="w-8 h-8" />
 };
