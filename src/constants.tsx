@@ -9,6 +9,7 @@ import {
   Droplets, 
   Building2,
   Users,
+  DraftingCompass,
   PencilRuler // Using PencilRuler instead of DraftingCompass to ensure visibility
 } from 'lucide-react';
 import { Service, Project, Stat } from './types';
@@ -86,7 +87,7 @@ export const SERVICES: Service[] = [
     id: 'engineering',
     title: 'Ingeniería Conceptual, Básica y de Detalle',
     category: 'engineering',
-    icon: 'PencilRuler',
+    icon: 'DraftingCompass',
     description: 'Desarrollamos soluciones integrando análisis técnicos, normativos y operativos para transformar ideas en proyectos ejecutables.',
     image: IMAGES.services.engineering,
     details: [
@@ -138,5 +139,6 @@ export const ICON_MAP: Record<string, React.ReactNode> = {
   Droplets: <Droplets className="w-8 h-8" />,
   Building2: <Building2 className="w-8 h-8" />,
   Users: <Users className="w-8 h-8" />,
+  DraftingCompass: <DraftingCompass className="w-8 h-8" />,
   PencilRuler: <PencilRuler className="w-8 h-8" />
 };
