@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             <span className="inline-flex items-center gap-2 bg-red-bright text-white px-4 py-1 rounded-sm font-black text-xs uppercase tracking-widest mb-6">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span> 30 Años de Experiencia
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-6 leading-none">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-6 leading-none">
               SERVICIOS DE INGENIERIA <br/>
               <span className="text-red-bright">Y MANTENIMIENTO</span>
             </h1>
