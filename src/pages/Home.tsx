@@ -9,7 +9,8 @@ const Home: React.FC = () => {
   return (
     <div className="bg-white">
       {/* Hero Section - Using dvh for better mobile browser support (address bar handling) */}
-      <section className="relative w-full min-h-[calc(100vh-5rem)] min-h-[calc(100dvh-5rem)] md:min-h-[calc(100vh-6rem)] md:min-h-[calc(100dvh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
+      {/* CAMBIO LÍNEA 10: Se ajustó el min-h para usar 75vh en tablets (md:) evitando que se corte el contenido */}
+      <section className="relative w-full min-h-[600px] md:min-h-[75vh] lg:min-h-[calc(100vh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
         <div className="absolute inset-0 z-0">
           <img 
             src={IMAGES.home.hero} 
@@ -24,18 +25,24 @@ const Home: React.FC = () => {
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full py-12 md:py-0">
+       {/* CAMBIO LÍNEA 28: Padding vertical dinámico (py-20 md:py-32) para centrar mejor el texto en tablets */}
+       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full py-20 md:py-32 lg:py-0">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 bg-red-bright text-white px-4 py-1 rounded-sm font-black text-xs uppercase tracking-widest mb-6">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span> 30 Años de Experiencia
             </span>
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-6 leading-none">
-              SERVICIOS DE INGENIERIA <br/>
-              <span className="text-red-bright">Y MANTENIMIENTO</span>
+            
+            {/* CAMBIO LÍNEA 34: Tipografía fluida aumentanda a md:text-6xl para tablets */}
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tighter">
+              SERVICIOS DE {/* CAMBIO LÍNEA 35: Salto de línea controlado para móviles/tablets */} <br className="hidden sm:block" />
+              <span className="text-red-bright">INGENIERÍA {/* CAMBIO LÍNEA 36: Salto de línea controlado para tablets */} <br className="hidden md:block" /> Y MANTENIMIENTO</span>
             </h1>
-            <p className="text-lg md:text-2xl text-slate-100 mb-10 font-bold uppercase tracking-tight">
-              Especialistas en Obras Civiles, Metalmecánicas, Eléctricas e Instrumentacion.
+
+            {/* CAMBIO LÍNEA 39: Ancho máximo max-w-2xl para mejorar la lectura en pantallas anchas de tablets */}
+            <p className="text-base md:text-xl lg:text-2xl text-slate-100 mb-10 font-bold uppercase tracking-tight max-w-2xl">
+              Especialistas en Obras Civiles, Metalmecánicas, Eléctricas e Instrumentación con excelencia técnica.
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/servicios" 
