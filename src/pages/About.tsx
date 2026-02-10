@@ -22,7 +22,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="h-1 w-20 bg-red-bright mb-6"></div>
           <h1 className="text-4xl md:text-7xl font-black mb-4 uppercase tracking-tighter">NOSOTROS</h1>
-          <p className="text-red-100 text-lg max-w-2xl font-bold uppercase tracking-tight">Casi tres décadas de ingeniería de alto impacto en Colombia.</p>
+          <p className="text-red-100 text-lg max-w-2xl font-bold uppercase tracking-tight">Tres décadas de ingeniería de alto impacto en Colombia.</p>
         </div>
       </section>
 
@@ -38,7 +38,7 @@ const About: React.FC = () => {
                     Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería civil y mantenimiento industrial de alta confiabilidad.
                 </p>
                 <p>
-                    A lo largo de 29 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso, Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Kaeser, Lhoist, Ajover, ISA y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
+                    A lo largo de 30 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso, Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Kaeser, Lhoist, Ajover, ISA y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-px bg-slate-100 mt-12 border border-slate-100">
@@ -87,7 +87,7 @@ const About: React.FC = () => {
                 <div className="absolute top-0 right-0 w-8 h-full bg-maroon-corp translate-x-full"></div>
               </div>
               <p className="text-slate-700 leading-relaxed text-xl font-bold italic border-l-4 border-maroon-corp pl-8">
-                Proveer soluciones integrales de ingeniería civil, eléctrica y mecánica para el sector industrial y gubernamental, garantizando la sostenibilidad, el cumplimiento normativo y el bienestar de nuestras comunidades bajo estándares internacionales.
+                Proveer soluciones integrales de ingeniería civil, metalmecanica, eléctrica e instrumentacion para el sector industrial y gubernamental, garantizando la sostenibilidad, el cumplimiento normativo y el bienestar de nuestras comunidades bajo estándares internacionales.
               </p>
             </div>
             

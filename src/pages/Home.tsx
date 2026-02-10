@@ -27,14 +27,14 @@ const Home: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full py-12 md:py-0">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 bg-red-bright text-white px-4 py-1 rounded-sm font-black text-xs uppercase tracking-widest mb-6">
-              <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span> 29 Años de Experiencia
+              <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span> 30 Años de Experiencia
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-6 leading-none">
-              DISEÑO Y <br/>
-              <span className="text-red-bright">CONSTRUCCIÓN</span>
+              SERVICIOS DE INGENIERIA <br/>
+              <span className="text-red-bright">Y MANTENIMIENTO</span>
             </h1>
             <p className="text-lg md:text-2xl text-slate-100 mb-10 font-bold uppercase tracking-tight">
-              Especialistas en Obras Civiles, Metalmecánicas y Eléctricas.
+              Especialistas en Obras Civiles, Metalmecánicas, Eléctricas e Instrumentacion.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
@@ -132,7 +132,7 @@ const Home: React.FC = () => {
                 <div className="h-1 w-20 bg-red-bright mb-6"></div>
                 <h2 className="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter">NUESTRO PORTAFOLIO</h2>
                 <p className="text-slate-300 font-medium">
-                Ofrecemos una gama completa de servicios especializados para la industria energética, civil y minera.
+                Ofrecemos una gama completa de servicios especializados para la industria energética, petroquimica oil and gas y minera.
                 </p>
             </div>
             <Link to="/servicios" className="text-red-bright font-black text-sm inline-flex items-center hover:text-white transition-colors tracking-widest uppercase">
@@ -162,7 +162,7 @@ const Home: React.FC = () => {
           <div className="bg-[#f4f4f4] p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-10 border-l-[16px] border-maroon-corp">
             <div className="max-w-xl">
               <h2 className="text-3xl md:text-5xl font-black mb-6 text-maroon-corp uppercase tracking-tighter">¿TIENE UN PROYECTO?</h2>
-              <p className="text-slate-600 font-bold">Contáctenos hoy para recibir una asesoría técnica especializada basada en casi tres décadas de experiencia.</p>
+              <p className="text-slate-600 font-bold">Contáctenos hoy para recibir una asesoría técnica especializada basada en tres décadas de experiencia.</p>
             </div>
             <Link to="/contacto" className="bg-red-bright text-white px-10 py-5 font-black text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl shadow-red-950/20">
               SOLICITAR COTIZACIÓN

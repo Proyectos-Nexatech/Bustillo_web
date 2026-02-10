@@ -33,7 +33,9 @@ export const SERVICES: Service[] = [
       'Construcción industrial y residencial',
       'Mantenimiento de edificaciones',
       'Sistemas de alcantarillado y drenaje',
-      'Diseño arquitectónico y estructural'
+      'Diseño arquitectónico y estructural',
+      'Movimiento de Tierra',
+      'Levantamiento Topografico'
     ]
   },
   {
@@ -41,11 +43,11 @@ export const SERVICES: Service[] = [
     title: 'Metalmecánica y Tuberías',
     category: 'industrial',
     icon: 'Settings',
-    description: 'Fabricación y montaje de estructuras pesadas.',
+    description: 'Prefabricación y montaje industriales.',
     image: IMAGES.services.metal,
     details: [
-      'Fabricación de estructuras metálicas',
-      'Tuberías de procesos industriales',
+      'Prefabricación y montaje de estructuras metálicas',
+      'Prefabricación y montaje Tuberías de procesos industriales',
       'Pruebas hidrostáticas certificadas',
       'Montajes industriales especializados'
     ]
@@ -60,7 +62,10 @@ export const SERVICES: Service[] = [
     details: [
       'Montaje de subestaciones eléctricas',
       'Sistemas de puesta a tierra (SPT)',
-      'Automatización de procesos'
+      'Automatización de procesos',
+      'Apantallamiento Electrico',
+      'Montaje de instalaciones electricas de media y baja tension',
+      'Montaje de instrumentacion industrial'
     ]
   },
   {
@@ -77,35 +82,8 @@ export const SERVICES: Service[] = [
       'Certificación con patrones trazables'
     ]
   },
-  {
-    id: 'earth',
-    title: 'Movimientos de Tierra',
-    category: 'specialized',
-    icon: 'Truck',
-    description: 'Infraestructura vial y adecuación de terrenos.',
-    image: IMAGES.services.earth,
-    details: [
-      'Mantenimiento de vías y taludes',
-      'Excavaciones y rellenos controlados',
-      'Fabricación de concreto premezclado',
-      'Mantenimiento de poliductos'
-    ]
-  },
-  {
-    id: 'topo',
-    title: 'Levantamientos Topográficos',
-    category: 'specialized',
-    icon: 'Map',
-    description: 'Precisión técnica con tecnología de punta.',
-    image: IMAGES.services.topo,
-    details: [
-      'Estaciones totales y GPS de alta precisión',
-      'Planos as-built y replanteos',
-      'Nivelación y volumetría',
-      'Control geométrico de obras'
-    ]
-  },
-  {
+
+   {
     id: 'machinery',
     title: 'Alquiler de Maquinaria',
     category: 'machinery',

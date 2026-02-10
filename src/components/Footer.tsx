@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               </Link>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-8 max-w-xs font-medium">
-              Líderes en soluciones de ingeniería con 29 años de experiencia, garantizando seguridad, calidad y sostenibilidad en cada proyecto.
+              Líderes en soluciones de ingeniería con 30 años de experiencia, garantizando seguridad, calidad y sostenibilidad en cada proyecto.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-3 bg-white/5 rounded-sm hover:bg-maroon-corp transition-all"><Linkedin size={20} /></a>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                 <MapPin className="text-maroon-corp shrink-0" size={20} />
                 <div className="text-sm text-slate-400">
                   <span className="text-white block font-black uppercase text-[10px] tracking-widest mb-1">Cartagena</span>
-                  Bolívar, Colombia.
+                  Bellevista Cra 56B #7A-69, Bolívar.
                 </div>
               </div>
             </div>
