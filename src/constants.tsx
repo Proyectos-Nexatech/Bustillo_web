@@ -60,7 +60,6 @@ export const SERVICES: Service[] = [
     details: [
       'Montaje de subestaciones eléctricas',
       'Sistemas de puesta a tierra (SPT)',
-      'Calibración de instrumentos',
       'Automatización de procesos'
     ]
   },
@@ -118,6 +117,20 @@ export const SERVICES: Service[] = [
       'Equipos menores especializados',
       'Contenedores para oficina y almacén',
       'Mantenimiento preventivo incluido'
+    ]
+  }
+  {
+    id: 'engineering',
+    title: 'Ingeniería Conceptual, Básica y de Detalle',
+    category: 'engineering',
+    icon: 'DraftingCompass',
+    description: 'Desarrollamos soluciones integrando análisis técnicos, normativos y operativos para transformar ideas en proyectos ejecutables.',
+    image: IMAGES.services.engineering,
+    details: [
+      'Ingeniería Conceptual, Básica y de Detalle',
+      'Reducción de incertidumbre y riesgos en campo',
+      'Optimización de recursos y costos',
+      'Proyectos eficientes y sostenibles'
     ]
   }
 ];

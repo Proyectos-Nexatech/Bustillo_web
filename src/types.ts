@@ -5,7 +5,7 @@ export interface Service {
   description: string;
   details: string[];
   icon: string;
-  category: 'civil' | 'industrial' | 'specialized' | 'machinery';
+  category: 'civil' | 'industrial' | 'specialized' | 'machinery' | 'engineering';
   image: string;
 }
 
