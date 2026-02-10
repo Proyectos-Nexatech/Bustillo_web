@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
     title: 'Metalmecánica y Tuberías',
     category: 'industrial',
     icon: 'Settings',
-    description: 'Prefabricación y montaje industriales.',
+    description: 'Prefabricación y montajes industriales.',
     image: IMAGES.services.metal,
     details: [
       'Prefabricación y montaje de estructuras metálicas',
@@ -80,21 +80,6 @@ export const SERVICES: Service[] = [
       'Calibración de transmisores y manómetros',
       'Diagnóstico y reparación en sitio',
       'Certificación con patrones trazables'
-    ]
-  },
-
-   {
-    id: 'machinery',
-    title: 'Alquiler de Maquinaria',
-    category: 'machinery',
-    icon: 'Building2',
-    description: 'Equipos listos para cualquier desafío.',
-    image: IMAGES.services.machinery,
-    details: [
-      'Línea amarilla (Excavadoras, Buldócer)',
-      'Equipos menores especializados',
-      'Contenedores para oficina y almacén',
-      'Mantenimiento preventivo incluido'
     ]
   },
   {
