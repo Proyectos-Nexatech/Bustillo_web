@@ -9,7 +9,8 @@ import {
   Droplets, 
   Building2,
   Users,
-  Gauge
+  Gauge,
+  PencilRuler // Using PencilRuler instead of DraftingCompass to ensure visibility
 } from 'lucide-react';
 import { Service, Project, Stat } from './types';
 import { IMAGES } from './images';
@@ -123,7 +124,7 @@ export const SERVICES: Service[] = [
     id: 'engineering',
     title: 'Ingeniería Conceptual, Básica y de Detalle',
     category: 'engineering',
-    icon: 'DraftingCompass',
+    icon: 'PencilRuler',
     description: 'Desarrollamos soluciones integrando análisis técnicos, normativos y operativos para transformar ideas en proyectos ejecutables.',
     image: IMAGES.services.engineering,
     details: [
