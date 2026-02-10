@@ -16,7 +16,7 @@ import { Service, Project, Stat } from './types';
 import { IMAGES } from './images';
 
 export const STATS: Stat[] = [
-  { label: 'Años de Experiencia', value: '29+' },
+  { label: 'Años de Experiencia', value: '30' },
   { label: 'Grandes Clientes', value: '7+' },
   { label: 'Sedes en Colombia', value: '2' },
   { label: 'Proyectos Exitosos', value: '100+' }
