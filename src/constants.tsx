@@ -118,7 +118,7 @@ export const SERVICES: Service[] = [
       'Contenedores para oficina y almacén',
       'Mantenimiento preventivo incluido'
     ]
-  }
+  },
   {
     id: 'engineering',
     title: 'Ingeniería Conceptual, Básica y de Detalle',
