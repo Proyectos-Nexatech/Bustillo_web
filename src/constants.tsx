@@ -72,7 +72,7 @@ export const SERVICES: Service[] = [
     id: 'valves',
     title: 'Mantenimiento y Pruebas de Válvulas y Calibración de Instrumentos',
     category: 'industrial',
-    icon: 'Gauge',
+    icon: 'PencilRuler',
     description: 'Aseguramiento metrológico y operatividad de elementos de control.',
     image: IMAGES.services.valves,
     details: [

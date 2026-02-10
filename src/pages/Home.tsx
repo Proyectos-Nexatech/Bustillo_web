@@ -141,11 +141,11 @@ const Home: React.FC = () => {
           </div>
           
           {/* Layout changed from Grid to Flexbox to allow centering of odd items and remove empty gaps */}
-          <div className="flex flex-wrap justify-center gap-px bg-white/10">
+          <div className="flex flex-wrap justify-center">
             {SERVICES.slice(0, 6).map((service) => (
               <div 
                 key={service.id} 
-                className="bg-maroon-corp p-10 hover:bg-red-bright transition-all duration-300 group w-full md:w-[calc(50%-0.5px)] lg:w-[calc(33.333%-0.67px)]"
+                className="bg-maroon-corp p-10 border border-white/10 hover:bg-red-bright transition-all duration-300 group w-full md:w-1/2 lg:w-1/3"
               >
                 <div className="text-red-bright mb-6 group-hover:text-white">{ICON_MAP[service.icon]}</div>
                 <h3 className="text-xl font-black mb-4 uppercase tracking-tight">{service.title}</h3>
