@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
       'Sistemas de puesta a tierra (SPT)',
       'Automatización de procesos',
       'Apantallamiento Electrico',
-      'Montaje de instalaciones electricas de media y baja tension',
+      'Diseño y montaje de instalaciones electricas de media y baja tension',
       'Montaje de instrumentacion industrial'
     ]
   },
