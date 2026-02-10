@@ -140,9 +140,13 @@ const Home: React.FC = () => {
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-white/10">
+          {/* Layout changed from Grid to Flexbox to allow centering of odd items and remove empty gaps */}
+          <div className="flex flex-wrap justify-center gap-px bg-white/10">
             {SERVICES.slice(0, 6).map((service) => (
-              <div key={service.id} className="bg-maroon-corp p-10 hover:bg-red-bright transition-all duration-300 group">
+              <div 
+                key={service.id} 
+                className="bg-maroon-corp p-10 hover:bg-red-bright transition-all duration-300 group w-full md:w-[calc(50%-0.5px)] lg:w-[calc(33.333%-0.67px)]"
+              >
                 <div className="text-red-bright mb-6 group-hover:text-white">{ICON_MAP[service.icon]}</div>
                 <h3 className="text-xl font-black mb-4 uppercase tracking-tight">{service.title}</h3>
                 <p className="text-slate-300 text-sm mb-8 font-medium leading-relaxed group-hover:text-white/80">{service.description}</p>
