@@ -9,7 +9,6 @@ import {
   Droplets, 
   Building2,
   Users,
-  Gauge,
   PencilRuler // Using PencilRuler instead of DraftingCompass to ensure visibility
 } from 'lucide-react';
 import { Service, Project, Stat } from './types';
