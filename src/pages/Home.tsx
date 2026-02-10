@@ -35,7 +35,7 @@ const Home: React.FC = () => {
             {/* CAMBIO LÍNEA 34: Tipografía fluida aumentanda a md:text-6xl para tablets */}
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-6 leading-[0.9] tracking-tighter">
               SERVICIOS DE {/* CAMBIO LÍNEA 35: Salto de línea controlado para móviles/tablets */} <br className="hidden sm:block" />
-              <span className="text-red-bright">INGENIERÍA,CONTRUCCION{/* CAMBIO LÍNEA 36: Salto de línea controlado para tablets */} <br className="hidden md:block" /> Y MANTENIMIENTO</span>
+              <span className="text-red-bright">INGENIERÍA, ,CONTRUCCION{/* CAMBIO LÍNEA 36: Salto de línea controlado para tablets */} <br className="hidden md:block" /> Y MANTENIMIENTO</span>
             </h1>
 
             {/* CAMBIO LÍNEA 39: Ancho máximo max-w-2xl para mejorar la lectura en pantallas anchas de tablets */}
