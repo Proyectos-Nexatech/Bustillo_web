@@ -22,7 +22,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="h-1 w-20 bg-red-bright mb-6"></div>
           <h1 className="text-4xl md:text-7xl font-black mb-4 uppercase tracking-tighter">NOSOTROS</h1>
-          <p className="text-red-100 text-lg max-w-2xl font-bold uppercase tracking-tight">Tres décadas de ingeniería de alto impacto en Colombia.</p>
+          <p className="text-red-100 text-lg max-w-2xl font-bold uppercase tracking-tight">Tres décadas de ingeniería de alto impacto.</p>
         </div>
       </section>
 
@@ -35,7 +35,7 @@ const About: React.FC = () => {
               <h2 className="text-3xl md:text-5xl font-black text-maroon-corp mb-8 uppercase tracking-tighter">DESDE 1996 <br/>CONSTRUYENDO PAÍS</h2>
               <div className="space-y-6 text-slate-600 text-lg font-medium leading-relaxed">
                 <p>
-                    Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería civil y mantenimiento industrial de alta confiabilidad.
+                    Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería y mantenimiento industrial de alta confiabilidad.
                 </p>
                 <p>
                     A lo largo de 30 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso, Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Kaeser, Lhoist, Ajover, ISA y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
@@ -98,7 +98,7 @@ const About: React.FC = () => {
                 <div className="absolute top-0 right-0 w-8 h-full bg-red-bright translate-x-full"></div>
               </div>
               <p className="text-slate-700 leading-relaxed text-xl font-bold italic border-l-4 border-red-bright pl-8">
-                Ser reconocidos para el año 2030 como la empresa líder en soluciones de ingeniería en el norte de Colombia, destacando por nuestra capacidad de innovación, solidez financiera y un compromiso inquebrantable con el desarrollo sostenible del país.
+                Ser reconocidos para el año 2030 como una empresa líder en soluciones de ingeniería en el norte de Colombia, destacandose por nuestra capacidad de innovación y un compromiso inquebrantable con el desarrollo sostenible del país.
               </p>
             </div>
           </div>

@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
           </div>
           <div className="flex items-center gap-8">
             <div className="text-right">
-              <p className="text-red-bright text-5xl font-black tracking-tighter leading-none">29+</p>
+              <p className="text-red-bright text-5xl font-black tracking-tighter leading-none">30</p>
               <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Años Operando</p>
             </div>
             <div className="w-px h-16 bg-white/10"></div>

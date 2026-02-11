@@ -80,7 +80,7 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 md:gap-20 items-center">
             <div className="w-full lg:w-1/2">
-              <h2 className="text-2xl md:text-5xl font-black mb-6 md:mb-8 leading-tight uppercase tracking-tighter">GESTIÓN DE PROYECTOS: <br/>CONTROL TOTAL</h2>
+              <h2 className="text-2xl md:text-5xl font-black mb-6 md:mb-8 leading-tight uppercase tracking-tighter">GESTIÓN DE PROYECTOS: <br/>E INTERVENTORIA</h2>
               <p className="text-red-100 text-base md:text-lg mb-8 md:mb-10 leading-relaxed font-bold border-l-4 border-red-bright pl-6 md:pl-8">
                 Utilizamos metodología PMI y software de clase mundial para garantizar que cada proyecto se entregue a tiempo y dentro del presupuesto.
               </p>
@@ -88,7 +88,7 @@ const Services: React.FC = () => {
                 {[
                     'Planificación estratégica con Primavera Project Planner.',
                     'Seguimiento de curvas de progreso físico (S-Curve).',
-                    'Implementación del ciclo PHVA (Planear, Hacer, Verificar, Actuar).'
+                    'CONTROL DE VALOR GANADO'
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-4 md:gap-6 group">
                     <span className="w-8 h-8 md:w-10 md:h-10 border-2 border-red-bright text-red-bright flex items-center justify-center font-black group-hover:bg-red-bright group-hover:text-white transition-all shrink-0">

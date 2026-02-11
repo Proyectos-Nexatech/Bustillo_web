@@ -28,13 +28,12 @@ export const SERVICES: Service[] = [
     title: 'Obras Civiles y Arquitectura',
     category: 'civil',
     icon: 'HardHat',
-    description: 'Diseño y construcción con los más altos estándares.',
+    description: 'Construcción con los más altos estándares.',
     image: IMAGES.services.civil,
     details: [
       'Construcción industrial y residencial',
       'Mantenimiento de edificaciones',
       'Sistemas de alcantarillado y drenaje',
-      'Diseño arquitectónico y estructural',
       'Movimiento de Tierra',
       'Levantamiento Topografico'
     ]
@@ -63,9 +62,9 @@ export const SERVICES: Service[] = [
     details: [
       'Montaje de subestaciones eléctricas',
       'Sistemas de puesta a tierra (SPT)',
+      'Diseño y montaje de instalaciones electricas de media y baja tension',
       'Automatización de procesos',
       'Apantallamiento Electrico',
-      'Diseño y montaje de instalaciones electricas de media y baja tension',
       'Montaje de instrumentacion industrial'
     ]
   },
@@ -92,7 +91,7 @@ export const SERVICES: Service[] = [
     image: IMAGES.services.engineering,
     details: [
       'Ingeniería Conceptual, Básica y de Detalle',
-      'Reducción de incertidumbre y riesgos en campo',
+      'Proyectos de Ingenieria Civil, Mecanica y Electrica',
       'Optimización de recursos y costos',
       'Proyectos eficientes y sostenibles'
     ]

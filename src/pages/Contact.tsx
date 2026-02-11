@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                         icon: <Mail className="text-white" size={24} />, 
                         color: 'bg-maroon-corp', // Vinotinto
                         title: 'EMAIL', 
-                        lines: ['GERENCIA@BUSTILLOINGENIERIA.COM', 'PROYECTOS.CARTAGENA@BUSTILLOINGENIERIA.COM'] 
+                        lines: ['gerencia@bustilloingenieria.com', 'proyectos.cartagena@bustilloingenieria.com'] 
                     }
                 ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-6 group">
