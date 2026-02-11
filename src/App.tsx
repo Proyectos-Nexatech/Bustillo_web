@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+// Use namespace import and cast to any to resolve "no exported member" errors in this environment
+import * as ReactRouterDOM from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,6 +10,9 @@ import Services from './pages/Services';
 import Projects from './pages/Projects';
 import HSE from './pages/HSE';
 import Contact from './pages/Contact';
+
+const { HashRouter, Routes, Route, useLocation } = ReactRouterDOM as any;
+const Router = HashRouter;
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -24,7 +28,8 @@ const App: React.FC = () => {
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow pt-20 md:pt-24">
+        {/* Adjusted padding: 16 (4rem) for mobile, 20 (5rem) for md, 24 (6rem) for lg */}
+        <main className="flex-grow pt-16 md:pt-20 lg:pt-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/nosotros" element={<About />} />

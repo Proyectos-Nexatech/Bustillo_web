@@ -7,7 +7,7 @@ import { ChevronRight, Award, ShieldCheck } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden">
       {/* Hero Section - Using dvh for better mobile browser support (address bar handling) */}
       {/* CAMBIO LÍNEA 10: Se ajustó el min-h para usar 75vh en tablets (md:) evitando que se corte el contenido */}
       <section className="relative w-full min-h-[600px] md:min-h-[75vh] lg:min-h-[calc(100vh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
