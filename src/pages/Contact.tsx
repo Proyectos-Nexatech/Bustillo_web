@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
                         icon: <MapPin className="text-white" size={24} />, 
                         color: 'bg-maroon-corp', // Vinotinto
                         title: 'SEDE BOLÍVAR', 
-                        lines: ['CARTAGENA, COLOMBIA.'] 
+                        lines: ['Bellevista Cra 56B #7A-69', 'CARTAGENA, BOLIVAR.'] 
                     },
                     { 
                         icon: <Phone className="text-white" size={24} />, 
