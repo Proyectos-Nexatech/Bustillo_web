@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                         title: 'EMAIL', 
                         lines: ['gerencia@bustilloingenieria.com', 'proyectos.cartagena@bustilloingenieria.com'] 
                     }
-                ].map((item, idx) => (
+                  ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-6 group">
                         <div className={`w-14 h-14 md:w-16 md:h-16 ${item.color} flex items-center justify-center shrink-0 transition-transform group-hover:scale-105 shadow-lg`}>
                             {item.icon}
@@ -65,7 +65,12 @@ const Contact: React.FC = () => {
                         <div>
                             <h4 className="text-[10px] md:text-xs font-black text-slate-400 uppercase tracking-widest mb-1">{item.title}</h4>
                             {item.lines.map((line, lidx) => (
-                                <p key={lidx} className="text-slate-900 font-black uppercase text-xs md:text-sm tracking-tighter leading-tight mb-0.5">{line}</p>
+                                <p 
+                                  key={lidx} 
+                                  className={`text-slate-900 font-black text-xs md:text-sm tracking-tighter leading-tight mb-0.5 ${item.title !== 'EMAIL' ? 'uppercase' : 'lowercase'}`}
+                                >
+                                  {line}
+                                </p>
                             ))}
                         </div>
                     </div>
