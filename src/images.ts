@@ -32,7 +32,7 @@ export const IMAGES = {
     earth: 'images/Movimiento_Tierras.png',
     topo: 'images/Topografia.png',
     machinery: 'images/Maquinaria.png',
-    valves: 'images/calibracion.png',
+    valves: 'images/Valvulas.png',
     engineering: 'images/Ingenieria.png',
     // Nueva imagen para sección de Gestión de Proyectos
     management: 'images/proyectos.png',
