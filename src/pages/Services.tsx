@@ -1,4 +1,5 @@
 
+// Update March 12, 2026 - Management Section Redesign
 import React from 'react';
 import { SERVICES, ICON_MAP } from '../constants';
 import { IMAGES } from '../images';
