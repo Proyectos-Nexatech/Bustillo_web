@@ -2,7 +2,19 @@
 import React from 'react';
 import { SERVICES, ICON_MAP } from '../constants';
 import { IMAGES } from '../images';
-import { Check } from 'lucide-react';
+import { 
+  Check, 
+  Handshake, 
+  ShieldCheck, 
+  Users, 
+  Map, 
+  Calendar, 
+  BarChart3, 
+  Play, 
+  Compass, 
+  Search, 
+  CheckCircle2 
+} from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
@@ -76,42 +88,107 @@ const Services: React.FC = () => {
       </section>
 
       {/* Management Section */}
-      <section className="py-16 md:py-24 bg-maroon-corp text-white">
+      <section className="py-16 md:py-24 bg-maroon-corp text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 md:gap-20 items-center">
             <div className="w-full lg:w-1/2">
-              <h2 className="text-2xl md:text-5xl font-black mb-6 md:mb-8 leading-tight uppercase tracking-tighter">GESTIÓN DE PROYECTOS <br/>E INTERVENTORIA</h2>
-              <p className="text-red-100 text-base md:text-lg mb-8 md:mb-10 leading-relaxed font-bold border-l-4 border-red-bright pl-6 md:pl-8">
-                Utilizamos metodología PMI y software de clase mundial para garantizar que cada proyecto se entregue a tiempo y dentro del presupuesto.
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <h2 className="text-3xl md:text-5xl font-black leading-tight uppercase tracking-tighter">
+                  GESTIÓN DE PROYECTOS <br/>E INTERVENTORÍA
+                </h2>
+                
+                {/* Eje Central badge */}
+                <div className="border border-white/20 bg-white/5 p-4 rounded-sm w-full md:max-w-[200px]">
+                  <p className="text-[8px] font-black uppercase tracking-widest text-center mb-2">Eje Central: Tres Pilares Fundamentales</p>
+                  <div className="flex justify-center gap-3 mb-2 text-white">
+                    <Handshake size={18} />
+                    <ShieldCheck size={18} />
+                    <Users size={18} />
+                  </div>
+                  <p className="text-[7px] font-bold text-center opacity-80 leading-tight">INTEGRANDO LOS 12 PRINCIPIOS DE GESTIÓN (PMI)</p>
+                </div>
+              </div>
+
+              <p className="text-red-100 text-sm md:text-base mb-8 md:mb-10 leading-relaxed font-bold border-l-4 border-red-bright pl-6 md:pl-8">
+                Operamos bajo los principios de la metodología del PMI, apoyándonos en avanzadas herramientas digitales y software especializado que garantizan un riguroso seguimiento y control integral de los proyectos. Nuestra gestión está enfocada en la entrega a tiempo, dentro del presupuesto y en la generación proactiva de alertas.
               </p>
-              <ul className="space-y-4 md:space-y-6">
-                {[
-                    'Planificación estratégica con Primavera Project Planner.',
-                    'Seguimiento de curvas de progreso físico (S-Curve).',
-                    'CONTROL DE VALOR GANADO'
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-4 md:gap-6 group">
-                    <span className="w-8 h-8 md:w-10 md:h-10 border-2 border-red-bright text-red-bright flex items-center justify-center font-black group-hover:bg-red-bright group-hover:text-white transition-all shrink-0">
-                        {idx + 1}
-                    </span>
-                    <span className="font-bold uppercase tracking-tight text-xs md:text-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
+
+              <div className="space-y-4">
+                {/* List items transformed into colored badges */}
+                <div className="flex items-center bg-white/5 border-l-[12px] border-red-600 p-4 group hover:bg-white/10 transition-all rounded-r-md">
+                   <div className="mr-5 text-red-500 group-hover:scale-110 transition-transform">
+                     <Map size={24} />
+                   </div>
+                   <div className="flex-1">
+                     <span className="text-[10px] font-black uppercase text-red-400 block mb-0.5">Alcance:</span>
+                     <p className="text-xs md:text-sm font-bold uppercase tracking-tight leading-tight">Estructura de Desglose de Trabajo (WBS) y Control de Entregables.</p>
+                   </div>
+                </div>
+
+                <div className="flex items-center bg-white/5 border-l-[12px] border-orange-500 p-4 group hover:bg-white/10 transition-all rounded-r-md">
+                   <div className="mr-5 text-orange-400 group-hover:scale-110 transition-transform">
+                     <Calendar size={24} />
+                   </div>
+                   <div className="flex-1">
+                     <span className="text-[10px] font-black uppercase text-orange-400 block mb-0.5">Tiempo:</span>
+                     <p className="text-xs md:text-sm font-bold uppercase tracking-tight leading-tight">Planificación Integrada de Cronograma y Seguimiento de Curva S.</p>
+                   </div>
+                </div>
+
+                <div className="flex items-center bg-white/5 border-l-[12px] border-blue-500 p-4 group hover:bg-white/10 transition-all rounded-r-md">
+                   <div className="mr-5 text-blue-400 group-hover:scale-110 transition-transform">
+                     <BarChart3 size={24} />
+                   </div>
+                   <div className="flex-1">
+                     <span className="text-[10px] font-black uppercase text-blue-400 block mb-0.5">Costo:</span>
+                     <p className="text-xs md:text-sm font-bold uppercase tracking-tight leading-tight">Análisis y Control Presupuestario con Valor Ganado.</p>
+                   </div>
+                </div>
+              </div>
             </div>
-            <div className="w-full lg:w-1/2">
+
+            <div className="w-full lg:w-1/2 relative group">
                 <div className="relative p-2 bg-white/10 border border-white/20 shadow-2xl">
                     <img 
                         src={IMAGES.services.management} 
                         alt="Gestión de Proyectos - Control Total" 
-                        className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                        className="w-full h-auto min-h-[400px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                         onError={(e) => { 
-                            // Fallback visual si falla la carga
                             e.currentTarget.style.opacity = '0.5'; 
                         }} 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                    
+                    {/* Overlay: Ciclos del Proyecto */}
+                    <div className="absolute bottom-4 left-4 right-4 bg-maroon-corp/90 backdrop-blur-md p-4 border border-white/10 shadow-2xl">
+                      <div className="inline-block bg-red-bright text-[10px] font-black px-2 py-0.5 mb-4 uppercase tracking-widest text-white">
+                        Ciclos del Proyecto
+                      </div>
+                      <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-2 md:gap-0 px-1">
+                        {[
+                          { label: 'Inicio', icon: <Play size={12} />, color: 'text-white' },
+                          { label: 'Planificación', icon: <Compass size={12} />, color: 'text-white' },
+                          { label: 'Ejecución', icon: <Users size={12} />, color: 'text-white' },
+                          { label: 'Monitoreo y Control', icon: <Search size={12} />, color: 'text-white' },
+                          { label: 'Cierre', icon: <CheckCircle2 size={12} />, color: 'text-white' }
+                        ].map((cycle, i, arr) => (
+                          <React.Fragment key={i}>
+                            <div className="flex flex-col items-center gap-1.5 group/item cursor-help">
+                              <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center bg-white/5 group-hover/item:border-red-bright group-hover/item:bg-red-bright/20 transition-all">
+                                {cycle.icon}
+                              </div>
+                              <span className="text-[7px] md:text-[8px] font-black uppercase text-center leading-tight opacity-70 group-hover/item:opacity-100 transition-opacity whitespace-nowrap">{cycle.label}</span>
+                            </div>
+                            {i < arr.length - 1 && (
+                              <div className="hidden md:block flex-1 h-px bg-white/20 mx-2 mb-4"></div>
+                            )}
+                          </React.Fragment>
+                        ))}
+                      </div>
+                    </div>
                 </div>
+                {/* Decorative element */}
+                <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b-2 border-r-2 border-red-bright opacity-50 group-hover:w-full group-hover:h-full transition-all duration-1000 -z-10 pointer-events-none"></div>
             </div>
           </div>
         </div>
