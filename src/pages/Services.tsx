@@ -95,19 +95,8 @@ const Services: React.FC = () => {
             <div className="w-full lg:w-1/2">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
                 <h2 className="text-3xl md:text-5xl font-black leading-tight uppercase tracking-tighter">
-                  GESTIÓN DE PROYECTOS <br/>E INTERVENTORÍA
+                  GESTIÓN DE <br/> PROYECTOS <br/>E INTERVENTORÍA
                 </h2>
-                
-                {/* Eje Central badge */}
-                <div className="border border-white/20 bg-white/5 p-4 rounded-sm w-full md:max-w-[200px]">
-                  <p className="text-[8px] font-black uppercase tracking-widest text-center mb-2">Eje Central: Tres Pilares Fundamentales</p>
-                  <div className="flex justify-center gap-3 mb-2 text-white">
-                    <Handshake size={18} />
-                    <ShieldCheck size={18} />
-                    <Users size={18} />
-                  </div>
-                  <p className="text-[7px] font-bold text-center opacity-80 leading-tight">INTEGRANDO LOS 12 PRINCIPIOS DE GESTIÓN (PMI)</p>
-                </div>
               </div>
 
               <p className="text-red-100 text-sm md:text-base mb-8 md:mb-10 leading-relaxed font-bold border-l-4 border-red-bright pl-6 md:pl-8">
@@ -116,7 +105,7 @@ const Services: React.FC = () => {
 
               <div className="space-y-4">
                 {/* List items transformed into colored badges */}
-                <div className="flex items-center bg-white/5 border-l-[12px] border-red-600 p-4 group hover:bg-white/10 transition-all rounded-r-md">
+                <div className="flex items-center bg-white/5 border-l-[12px] border-white p-4 group hover:bg-white/10 transition-all rounded-r-md">
                    <div className="mr-5 text-red-500 group-hover:scale-110 transition-transform">
                      <Map size={24} />
                    </div>
@@ -126,7 +115,7 @@ const Services: React.FC = () => {
                    </div>
                 </div>
 
-                <div className="flex items-center bg-white/5 border-l-[12px] border-orange-500 p-4 group hover:bg-white/10 transition-all rounded-r-md">
+                <div className="flex items-center bg-white/5 border-l-[12px] border-white p-4 group hover:bg-white/10 transition-all rounded-r-md">
                    <div className="mr-5 text-orange-400 group-hover:scale-110 transition-transform">
                      <Calendar size={24} />
                    </div>
@@ -136,7 +125,7 @@ const Services: React.FC = () => {
                    </div>
                 </div>
 
-                <div className="flex items-center bg-white/5 border-l-[12px] border-blue-500 p-4 group hover:bg-white/10 transition-all rounded-r-md">
+                <div className="flex items-center bg-white/5 border-l-[12px] border-white p-4 group hover:bg-white/10 transition-all rounded-r-md">
                    <div className="mr-5 text-blue-400 group-hover:scale-110 transition-transform">
                      <BarChart3 size={24} />
                    </div>
