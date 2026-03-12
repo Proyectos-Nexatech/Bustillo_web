@@ -5,8 +5,6 @@ import { SERVICES, ICON_MAP } from '../constants';
 import { IMAGES } from '../images';
 import { 
   Check, 
-  Handshake, 
-  ShieldCheck, 
   Users, 
   Map, 
   Calendar, 
