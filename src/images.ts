@@ -27,7 +27,7 @@ export const IMAGES = {
   services: {
     // Fotos para cada tarjeta de servicio
     civil: 'images/Foto-Obras-civiles.png',
-    metal: 'images/Metalmecanica.png',
+    metal: 'images/Metalmecanica.png?v=2',
     electric: 'images/Electricidad_Instrumentacion.png',
     earth: 'images/Movimiento_Tierras.png',
     topo: 'images/Topografia.png',
