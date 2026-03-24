@@ -55,28 +55,28 @@ const HSE: React.FC = () => {
             <h2 className="text-2xl md:text-4xl font-black mb-4 uppercase tracking-tighter">COMPROMISO SSOMA</h2>
             <div className="h-1 w-16 md:w-20 bg-red-bright mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             {[
-              { 
-                icon: <UserCheck />, 
-                title: 'Competencia del Personal', 
-                desc: 'Todo nuestro equipo técnico está certificado y recibe capacitación continua en riesgos específicos.' 
+              {
+                icon: <UserCheck />,
+                title: 'Competencia del Personal',
+                desc: 'Todo nuestro equipo técnico está certificado y recibe capacitación continua en riesgos específicos.'
               },
-              { 
-                icon: <AlertTriangle />, 
-                title: 'Identificación de Riesgos', 
-                desc: 'Análisis de trabajo seguro (ATS) realizado antes de iniciar cada jornada en todos nuestros frentes.' 
+              {
+                icon: <AlertTriangle />,
+                title: 'Identificación y Control de Riesgos',
+                desc: 'Análisis de trabajo seguro (ATS) realizado antes de iniciar cada jornada en todos nuestros frentes.'
               },
-              { 
-                icon: <FileText />, 
-                title: 'Cumplimiento Legal', 
-                desc: 'Apegados al 100% a la legislación colombiana vigente en materia de seguridad y trabajo.' 
+              {
+                icon: <FileText />,
+                title: 'Cumplimiento Legal',
+                desc: 'Cumplimos con la legislación colombiana vigente en Seguridad y Salud en el Trabajo (SST) y gestión ambiental, garantizando la protección del personal y el cuidado del entorno.'
               },
-              { 
-                icon: <Shield />, 
-                title: 'Elementos de Protección', 
-                desc: 'Dotación de EPP de alta gama para asegurar la máxima protección en ambientes hostiles.' 
+              {
+                icon: <Shield />,
+                title: 'Elementos de Protección',
+                desc: 'Nuestro personal opera con Elementos de Protección Personal (EPP) adecuados, asegurando su protección en condiciones de alto riesgo y ambientes exigentes.'
               }
             ].map((item, idx) => (
               <div key={idx} className="bg-white/5 border border-white/10 p-6 md:p-8 flex gap-4 md:gap-6 items-start hover:bg-white/10 transition-colors">

@@ -26,13 +26,33 @@ export const IMAGES = {
   },
   services: {
     // Fotos para cada tarjeta de servicio
-    civil: 'images/Foto-Obras-civiles.png',
+    civil: [
+      'images/Imagen civil 1.jpg',
+      'images/Imagen civil 2.jpg',
+      'images/Imagen civil 3.jpg',
+      'images/Imagen civil 4.jpg',
+      'images/Imagen civil 5.jpg',
+      'images/Imagen civil 6.jpg',
+      'images/Imagen civil 7.jpg',
+      'images/Imagen civil 8.jpg',
+      'images/Imagen civil 9.jpg',
+      'images/Imagen3.jpg'
+    ],
     metal: 'images/Metalmecanica.png?v=2',
     electric: 'images/Electricidad_Instrumentacion.png',
     earth: 'images/Movimiento_Tierras.png',
     topo: 'images/Topografia.png',
     machinery: 'images/Maquinaria.png',
-    valves: 'images/Valvulas.png',
+    valves: [
+      'images/Valvulas.png',
+      'images/Valvulas 1.jpg',
+      'images/valvulas 2.jpg',
+      'images/valvulas 3.jpg',
+      'images/valvulas 4.jpg',
+      'images/valvulas 5.jpg',
+      'images/valvulas 6.jpg',
+      'images/valvulas 7.jpg'
+    ],
     engineering: 'images/Ingenieria.png',
     // Nueva imagen para sección de Gestión de Proyectos
     management: 'images/proyectos.png',
@@ -43,5 +63,6 @@ export const IMAGES = {
     maintenance: 'images/Gecelca.jpg',
     library: 'images/library.jpg',
     paving: 'images/paving.jpg',
+    dentalCenter: 'images/Imagen civil 5.jpg',
   }
 };

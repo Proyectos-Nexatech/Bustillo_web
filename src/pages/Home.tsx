@@ -12,9 +12,9 @@ const Home: React.FC = () => {
       {/* CAMBIO LÍNEA 10: Se ajustó el min-h para usar 75vh en tablets (md:) evitando que se corte el contenido */}
       <section className="relative w-full min-h-[600px] md:min-h-[75vh] lg:min-h-[calc(100vh-6rem)] flex items-center overflow-hidden bg-maroon-corp">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={IMAGES.home.hero} 
-            alt="Ingeniería Industrial" 
+          <img
+            src={IMAGES.home.hero}
+            alt="Ingeniería Industrial"
             className="w-full h-full object-cover grayscale-[20%] contrast-[1.1] opacity-60"
             onError={(e) => {
               // Hide image on error to show the maroon background
@@ -24,14 +24,14 @@ const Home: React.FC = () => {
           {/* Custom class 'hero-gradient' from index.html for cross-browser stability */}
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
-        
-       {/* CAMBIO LÍNEA 28: Padding vertical dinámico (py-20 md:py-32) para centrar mejor el texto en tablets */}
-       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full py-20 md:py-32 lg:py-0">
+
+        {/* CAMBIO LÍNEA 28: Padding vertical dinámico (py-20 md:py-32) para centrar mejor el texto en tablets */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full py-20 md:py-32 lg:py-0">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 bg-red-bright text-white px-4 py-1 rounded-sm font-black text-xs uppercase tracking-widest mb-6">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span> 30 Años de Experiencia
             </span>
-            
+
             {/* CAMBIO LÍNEA 34: Tipografía fluida aumentanda a md:text-6xl para tablets */}
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-6 leading-[0.9] tracking-tighter">
               SERVICIOS DE INGENIERÍA, {/* CAMBIO LÍNEA 35: Salto de línea controlado para móviles/tablets */} <br className="hidden sm:block" />
@@ -44,14 +44,14 @@ const Home: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                to="/servicios" 
+              <Link
+                to="/servicios"
                 className="bg-white text-maroon-corp px-8 py-4 rounded-sm font-black text-sm uppercase tracking-widest transition-all flex items-center justify-center group shadow-xl hover:bg-red-bright hover:text-white"
               >
                 NUESTROS SERVICIOS <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link 
-                to="/proyectos" 
+              <Link
+                to="/proyectos"
                 className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-sm font-black text-sm uppercase tracking-widest transition-all hover:bg-white/10"
               >
                 VER PROYECTOS
@@ -80,14 +80,14 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2 relative">
-                <div className="absolute -left-10 top-0 w-1 bg-red-bright h-full opacity-50"></div>
+              <div className="absolute -left-10 top-0 w-1 bg-red-bright h-full opacity-50"></div>
               <h2 className="text-3xl md:text-5xl font-black text-maroon-corp mb-8 leading-tight uppercase">
-                LIDERAZGO TÉCNICO <br/> Y CALIDAD GARANTIZADA
+                LIDERAZGO TÉCNICO <br /> Y CALIDAD GARANTIZADA
               </h2>
               <p className="text-slate-600 text-lg mb-10 leading-relaxed font-medium">
                 Fundada en 1996, Bustillo Ingeniería SAS ha evolucionado para convertirse en un referente nacional, gestionando proyectos complejos con metodologías PMI y certificaciones internacionales.
               </p>
-              
+
               <div className="space-y-8">
                 <div className="flex items-start gap-4 group">
                   <div className="p-3 bg-red-50 text-maroon-corp rounded-sm group-hover:bg-maroon-corp group-hover:text-white transition-colors">
@@ -109,12 +109,12 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="lg:w-1/2 relative">
               <div className="relative z-10 p-4 bg-white shadow-2xl bg-slate-100 min-h-[300px]">
-                <img 
-                  src={IMAGES.home.team} 
-                  alt="Equipo Bustillo" 
+                <img
+                  src={IMAGES.home.team}
+                  alt="Equipo Bustillo"
                   className="w-full aspect-video object-cover"
                   onError={(e) => {
                     // Hide if missing, keeps the container which has background color
@@ -136,22 +136,22 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
             <div className="max-w-xl">
-                <div className="h-1 w-20 bg-red-bright mb-6"></div>
-                <h2 className="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter">NUESTRO PORTAFOLIO</h2>
-                <p className="text-slate-300 font-medium">
-                Ofrecemos una gama completa de servicios especializados para la industria energética, petroquimica oil and gas y minera.
-                </p>
+              <div className="h-1 w-20 bg-red-bright mb-6"></div>
+              <h2 className="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter">NUESTRO PORTAFOLIO</h2>
+              <p className="text-slate-300 font-medium">
+                Ofrecemos una gama completa de servicios especializados para la industria energética, quimica, petroquimica, oil and gas y minera.
+              </p>
             </div>
             <Link to="/servicios" className="text-red-bright font-black text-sm inline-flex items-center hover:text-white transition-colors tracking-widest uppercase">
-                VER TODOS LOS SERVICIOS <ChevronRight size={16} className="ml-2" />
+              VER TODOS LOS SERVICIOS <ChevronRight size={16} className="ml-2" />
             </Link>
           </div>
-          
+
           {/* Layout changed from Grid to Flexbox to allow centering of odd items and remove empty gaps */}
           <div className="flex flex-wrap justify-center">
             {SERVICES.slice(0, 6).map((service) => (
-              <div 
-                key={service.id} 
+              <div
+                key={service.id}
                 className="bg-maroon-corp p-10 border border-white/10 hover:bg-red-bright transition-all duration-300 group w-full md:w-1/2 lg:w-1/3"
               >
                 <div className="text-red-bright mb-6 group-hover:text-white">{ICON_MAP[service.icon]}</div>

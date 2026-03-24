@@ -10,13 +10,13 @@ const About: React.FC = () => {
       <section className="bg-maroon-corp py-24 text-white relative overflow-hidden">
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
-            <img 
-                src={IMAGES.about.hero} 
-                alt="Fondo Nosotros" 
-                className="w-full h-full object-cover opacity-40 mix-blend-multiply grayscale"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-maroon-corp via-maroon-corp/80 to-transparent"></div>
+          <img
+            src={IMAGES.about.hero}
+            alt="Fondo Nosotros"
+            className="w-full h-full object-cover opacity-40 mix-blend-multiply grayscale"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-maroon-corp via-maroon-corp/80 to-transparent"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -32,13 +32,13 @@ const About: React.FC = () => {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
               <span className="text-red-bright font-black uppercase tracking-[0.3em] text-[10px] mb-4 block">Nuestra Trayectoria</span>
-              <h2 className="text-3xl md:text-5xl font-black text-maroon-corp mb-8 uppercase tracking-tighter">DESDE 1996 <br/>CONSTRUYENDO PAÍS</h2>
+              <h2 className="text-3xl md:text-5xl font-black text-maroon-corp mb-8 uppercase tracking-tighter">DESDE 1996 <br />CONSTRUYENDO PAÍS</h2>
               <div className="space-y-6 text-slate-600 text-lg font-medium leading-relaxed">
                 <p>
-                    Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería y mantenimiento industrial de alta confiabilidad.
+                  Bustillo Ingeniería SAS nació en Montelíbano, Córdoba, con la visión de proveer servicios de ingeniería y mantenimiento industrial de alta confiabilidad.
                 </p>
                 <p>
-                    A lo largo de 30 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso, Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Kaeser, Lhoist, Ajover, ISA y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
+                  A lo largo de 30 años, hemos consolidado relaciones duraderas con gigantes de la industria como Cerro Matoso, Gecelca, Ocensa, Prodeco, Carbomax, Harinas 3 Castillo, Termocandelaria, Cabot, Kaeser, Lhoist, Ajover, ISA y Mexichem, adaptándonos a los cambios tecnológicos y fortaleciendo nuestra capacidad operativa en toda la región Caribe.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-px bg-slate-100 mt-12 border border-slate-100">
@@ -53,18 +53,18 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="lg:w-1/2 relative">
-                <div className="p-4 bg-white shadow-2xl relative z-10 border-l-[12px] border-maroon-corp">
-                    <img 
-                        src={IMAGES.about.history} 
-                        alt="Historia de la empresa" 
-                        className="w-full grayscale hover:grayscale-0 transition-all duration-500"
-                        onError={(e) => {
-                          // Fallback to a placeholder if image is missing
-                          e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 600'%3E%3Crect fill='%23dddddd' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%23555555'%3EImagen No Disponible%3C/text%3E%3C/svg%3E";
-                        }}
-                    />
-                </div>
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-bright -z-0"></div>
+              <div className="p-4 bg-white shadow-2xl relative z-10 border-l-[12px] border-maroon-corp">
+                <img
+                  src={IMAGES.about.history}
+                  alt="Historia de la empresa"
+                  className="w-full grayscale hover:grayscale-0 transition-all duration-500"
+                  onError={(e) => {
+                    // Fallback to a placeholder if image is missing
+                    e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 600'%3E%3Crect fill='%23dddddd' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%23555555'%3EImagen No Disponible%3C/text%3E%3C/svg%3E";
+                  }}
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-bright -z-0"></div>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-20">
             <h2 className="text-5xl md:text-8xl font-black text-maroon-corp uppercase tracking-tighter mb-4">
-              MISIÓN & <br/> <span className="text-maroon-corp">VISIÓN</span>
+              MISIÓN & <br /> <span className="text-maroon-corp">VISIÓN</span>
             </h2>
           </div>
 
@@ -90,7 +90,7 @@ const About: React.FC = () => {
                 Proveer soluciones integrales de ingeniería civil, metalmecanica, eléctrica e instrumentacion para el sector industrial y gubernamental, garantizando la sostenibilidad, el cumplimiento normativo y el bienestar de nuestras comunidades bajo estándares internacionales.
               </p>
             </div>
-            
+
             <div className="relative">
               {/* Same header style for "VISIÓN" */}
               <div className="bg-maroon-corp text-white px-8 py-3 inline-block font-black text-3xl uppercase tracking-widest mb-10 relative">
@@ -112,21 +112,21 @@ const About: React.FC = () => {
             <h2 className="text-3xl md:text-5xl font-black text-maroon-corp mb-4 uppercase tracking-tighter">GARANTÍA DE EXCELENCIA</h2>
             <div className="h-1 w-20 bg-red-bright mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-100 border border-slate-100">
             {[
-                { title: 'ISO 9001:2015', label: 'Gestión de Calidad', desc: 'Aseguramos procesos consistentes y satisfactorios para cada uno de nuestros clientes.' },
-                { title: 'ISO 14001:2015', label: 'Gestión Ambiental', desc: 'Comprometidos con minimizar el impacto ambiental de nuestras operaciones industriales.' },
-                { title: 'ISO 45001:2018', label: 'Seguridad y Salud', desc: 'Protegemos la integridad física de todos nuestros colaboradores en cada frente de obra.' }
+              { title: 'ISO 9001:2015', label: 'Gestión de Calidad', desc: 'Aseguramos procesos consistentes y satisfactorios para cada uno de nuestros clientes.' },
+              { title: 'ISO 14001:2015', label: 'Gestión Ambiental', desc: 'Comprometidos con minimizar el impacto ambiental de nuestras operaciones industriales.' },
+              { title: 'ISO 45001:2018', label: 'Seguridad y Salud', desc: 'Protegemos la integridad física de todos nuestros colaboradores en cada frente de obra.' }
             ].map((cert, idx) => (
-                <div key={idx} className="bg-white p-12 hover:bg-slate-50 transition-colors">
-                    <div className="inline-block p-4 bg-maroon-corp text-white rounded-sm mb-8">
-                        <CheckCircle2 size={32} />
-                    </div>
-                    <h4 className="text-2xl font-black text-slate-800 mb-2 tracking-tight">{cert.title}</h4>
-                    <p className="text-[10px] font-black text-red-bright uppercase tracking-[0.2em] mb-6">{cert.label}</p>
-                    <p className="text-slate-500 text-sm leading-relaxed">{cert.desc}</p>
+              <div key={idx} className="bg-white p-12 hover:bg-slate-50 transition-colors">
+                <div className="inline-block p-4 bg-maroon-corp text-white rounded-sm mb-8">
+                  <CheckCircle2 size={32} />
                 </div>
+                <h4 className="text-2xl font-black text-slate-800 mb-2 tracking-tight">{cert.title}</h4>
+                <p className="text-[10px] font-black text-red-bright uppercase tracking-[0.2em] mb-6">{cert.label}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">{cert.desc}</p>
+              </div>
             ))}
           </div>
         </div>

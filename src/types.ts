@@ -6,7 +6,7 @@ export interface Service {
   details: string[];
   icon: string;
   category: 'civil' | 'industrial' | 'specialized' | 'machinery' | 'engineering';
-  image: string;
+  image: string | string[];
 }
 
 export interface Project {

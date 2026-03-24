@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
   // Updated to use the image logo (same as Navbar)
   // Added bg-white and padding to ensure visibility on dark background
   const Logo = () => (
-    <img 
-      src={IMAGES.logo} 
-      alt="Bustillo Ingeniería SAS" 
+    <img
+      src={IMAGES.logo}
+      alt="Bustillo Ingeniería SAS"
       className="h-16 w-auto object-contain bg-white p-2 rounded-sm"
     />
   );
@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#1A1A1A] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 border-b border-white/5 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-12 border-b border-white/5 pb-12">
           {/* Brand Info with Image Logo */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-1">
+          <div className="col-span-1 md:col-span-1 lg:col-span-3">
             <div className="mb-8">
               <Link to="/" className="inline-block transition-transform hover:scale-105">
                 <Logo />
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="lg:pl-8">
+          <div className="lg:col-span-2 lg:pl-4">
             <h4 className="text-xs font-black uppercase tracking-[0.3em] text-red-bright mb-8">Navegación</h4>
             <ul className="space-y-4 text-slate-300 text-sm font-bold uppercase tracking-tight">
               <li><Link to="/" className="hover:text-red-bright transition-colors">Inicio</Link></li>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Locations */}
-          <div>
+          <div className="lg:col-span-3">
             <h4 className="text-xs font-black uppercase tracking-[0.3em] text-red-bright mb-8">Nuestras Sedes</h4>
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="lg:col-span-4">
             <h4 className="text-xs font-black uppercase tracking-[0.3em] text-red-bright mb-8">Contacto</h4>
             <div className="space-y-5 text-sm font-bold uppercase tracking-tight text-slate-300">
               <div className="flex items-center space-x-4">
@@ -84,9 +84,9 @@ const Footer: React.FC = () => {
                   <Mail className="text-maroon-corp" size={16} />
                 </div>
                 <div className="flex flex-col">
-                  {/* Increased font size from text-[11px] to text-sm */}
-                  <span className="break-all lowercase text-sm tracking-normal mb-1">gerencia@bustilloingenieria.com</span>
-                  <span className="break-all lowercase text-sm tracking-normal">proyectos.cartagena@bustilloingenieria.com</span>
+                  <span className="whitespace-nowrap lowercase text-sm tracking-normal mb-1">gerencia@bustilloingenieria.com</span>
+                  <span className="whitespace-nowrap lowercase text-sm tracking-normal mb-1">proyectos.cartagena@bustilloingenieria.com</span>
+                  <span className="whitespace-nowrap lowercase text-sm tracking-normal">comercial@bustilloingenieria.com</span>
                 </div>
               </div>
             </div>
