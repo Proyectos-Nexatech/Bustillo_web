@@ -38,8 +38,25 @@ export const IMAGES = {
       'images/Imagen civil 9.jpg',
       'images/Imagen3.jpg'
     ],
-    metal: 'images/Metalmecanica.png?v=2',
-    electric: 'images/Electricidad_Instrumentacion.png',
+    metal: [
+      'images/Metalmecanica.png',
+      'images/Metalmecanica 1.jpeg',
+      'images/Metalmecanica 2.jpeg',
+      'images/Metalmecanica 3.jpeg',
+      'images/Metalmecanica 4.jpeg',
+      'images/Metalmecanica 5.jpeg',
+      'images/Metalmecanica 6.jpeg',
+      'images/Metalmecanica 7.jpeg',
+      'images/Metalmecanica 8.jpeg'
+    ],
+    electric: [
+      'images/Electrico 1.jpeg',
+      'images/Electrico 2.jpeg',
+      'images/Electrico 3.jpeg',
+      'images/Electrico 4.jpeg',
+      'images/Electrico 5.png',
+      'images/Electrico 6.jpeg'
+    ],
     earth: 'images/Movimiento_Tierras.png',
     topo: 'images/Topografia.png',
     machinery: 'images/Maquinaria.png',
@@ -54,6 +71,8 @@ export const IMAGES = {
       'images/valvulas 7.jpg'
     ],
     engineering: 'images/Ingenieria.png',
+    concrete: 'images/concretera.png',
+    specialized_engineering: 'images/pruebas lazo.png',
     // Nueva imagen para sección de Gestión de Proyectos
     management: 'images/proyectos.png',
   },
@@ -64,5 +83,6 @@ export const IMAGES = {
     library: 'images/library.jpg',
     paving: 'images/paving.jpg',
     dentalCenter: 'images/Imagen civil 5.jpg',
+    ductwork: 'images/Instalacion Ducteria.jpg',
   }
 };

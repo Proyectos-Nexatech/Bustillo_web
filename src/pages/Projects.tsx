@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
               <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full">
                 <div className="flex items-center gap-2 mb-4">
                 </div>
-                <h3 className="text-3xl md:text-4xl font-black text-white mb-6 group-hover:text-red-bright transition-colors uppercase tracking-tighter">
+                <h3 className="text-xl md:text-2xl font-black text-white mb-6 group-hover:text-red-bright transition-colors uppercase tracking-tighter">
                   {project.title}
                 </h3>
                 <div className="grid grid-cols-2 gap-6 pt-6 border-t border-white/20">

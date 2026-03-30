@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
             {/* CAMBIO LÍNEA 39: Ancho máximo max-w-2xl para mejorar la lectura en pantallas anchas de tablets */}
             <p className="text-base md:text-xl lg:text-2xl text-slate-100 mb-10 font-bold uppercase tracking-tight max-w-2xl">
-              Especialistas en Obras Civiles, Metalmecánicas, Eléctricas e Instrumentación con excelencia técnica.
+              Especialistas en Obras Civiles, Metálicas, Eléctricas, Concreto y Topografía con excelencia técnica.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
                     <ShieldCheck size={24} />
                   </div>
                   <div>
-                    <h4 className="font-black text-lg mb-1 text-slate-800 uppercase tracking-tighter">Cero Incidentes</h4>
+                    <h4 className="font-black text-lg mb-1 text-slate-800 uppercase tracking-tighter">Cero Accidentes</h4>
                     <p className="text-slate-500 text-sm">Priorizamos la seguridad de nuestro talento humano en cada proyecto.</p>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
             <div className="max-w-xl">
               <div className="h-1 w-20 bg-red-bright mb-6"></div>
-              <h2 className="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter">NUESTRO PORTAFOLIO</h2>
+              <h2 className="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter">NUESTRO PORTAFOLIO !!!</h2>
               <p className="text-slate-300 font-medium">
                 Ofrecemos una gama completa de servicios especializados para la industria energética, quimica, petroquimica, oil and gas y minera.
               </p>
@@ -149,7 +149,7 @@ const Home: React.FC = () => {
 
           {/* Layout changed from Grid to Flexbox to allow centering of odd items and remove empty gaps */}
           <div className="flex flex-wrap justify-center">
-            {SERVICES.slice(0, 6).map((service) => (
+            {SERVICES.map((service) => (
               <div
                 key={service.id}
                 className="bg-maroon-corp p-10 border border-white/10 hover:bg-red-bright transition-all duration-300 group w-full md:w-1/2 lg:w-1/3"
