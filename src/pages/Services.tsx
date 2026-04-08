@@ -40,7 +40,7 @@ const ImageCarousel: React.FC<{ images: string[], alt: string }> = ({ images, al
             key={i}
             src={img}
             alt={`${alt} ${i + 1}`}
-            className="w-full h-full object-cover shrink-0"
+            className={`w-full h-full ${img.includes('apantallamiento.png') ? 'object-contain' : 'object-cover'} shrink-0`}
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
         ))}
@@ -90,18 +90,22 @@ const DetailCard: React.FC<{ detail: ServiceDetail }> = ({ detail }) => {
         </h3>
       </div>
       
-      <p className="text-slate-600 text-[11px] md:text-xs font-medium mb-4 leading-snug">
-        {detail.description}
-      </p>
+      {detail.description && (
+        <p className="text-slate-600 text-[11px] md:text-xs font-medium mb-4 leading-snug">
+          {detail.description}
+        </p>
+      )}
 
-      <ul className="space-y-1.5 mt-auto">
-        {detail.items.map((item, idx) => (
-          <li key={idx} className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-red-bright mt-1.5 shrink-0" />
-            <span className="text-[10px] md:text-xs font-bold text-slate-700 uppercase tracking-tighter leading-tight">{item}</span>
-          </li>
-        ))}
-      </ul>
+      {detail.items && detail.items.length > 0 && (
+        <ul className="space-y-1.5">
+          {detail.items.map((item, idx) => (
+            <li key={idx} className="flex items-start gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-red-bright mt-1.5 shrink-0" />
+              <span className="text-[10px] md:text-xs font-bold text-slate-700 uppercase tracking-tighter leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
@@ -143,7 +147,7 @@ const Services: React.FC = () => {
                         {ICON_MAP[service.icon]}
                       </div>
                       <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]">
-                        {service.id === 'valves' ? 'Servicio Especializado' : 'Servicios de Ingeniería'}
+                        {service.id === 'valves' || service.id === 'specialized_engineering' ? 'Servicio Especializado' : 'Servicios de Ingeniería'}
                       </span>
                     </div>
                     <h2 className="text-2xl md:text-5xl font-black text-maroon-corp mb-2 uppercase tracking-tighter">{service.title}</h2>
@@ -163,6 +167,22 @@ const Services: React.FC = () => {
                             <div key={idx} className="flex items-center gap-3 p-3 md:p-4 bg-[#f9f9f9] border-b-2 border-slate-200">
                               <Check className="text-red-bright shrink-0" size={16} />
                               <span className="text-xs md:text-sm font-bold text-slate-700 uppercase tracking-tighter">{detail}</span>
+                            </div>
+                          );
+                        } else if (!detail.description && (!detail.items || detail.items.length === 0)) {
+                          // Simple card with icon if no description/items
+                          return (
+                            <div key={idx} className="flex items-center gap-3 p-3 md:p-4 bg-[#f9f9f9] border-b-2 border-slate-200 group hover:bg-[#f2f2f2] transition-colors">
+                              <div className="text-red-bright shrink-0 transition-transform group-hover:scale-110">
+                                {detail.icon ? (
+                                  <div className="scale-75">
+                                    {ICON_MAP[detail.icon]}
+                                  </div>
+                                ) : (
+                                  <Check size={16} />
+                                )}
+                              </div>
+                              <span className="text-xs md:text-sm font-bold text-slate-700 uppercase tracking-tighter">{detail.title}</span>
                             </div>
                           );
                         } else {

@@ -28,9 +28,7 @@ export const IMAGES = {
     // Fotos para cada tarjeta de servicio
     civil: [
       'images/Imagen civil 1.jpg',
-      'images/Imagen civil 2.jpg',
       'images/Imagen civil 3.jpg',
-      'images/Imagen civil 4.jpg',
       'images/Imagen civil 5.jpg',
       'images/Imagen civil 6.jpg',
       'images/Imagen civil 7.jpg',
@@ -39,15 +37,13 @@ export const IMAGES = {
       'images/Imagen3.jpg'
     ],
     metal: [
+      'images/Imagen civil 4.jpg',
+      'images/Imagen civil 2.jpg',
+      'images/Metalmecanica 7.jpeg',
       'images/Metalmecanica.png',
-      'images/Metalmecanica 1.jpeg',
-      'images/Metalmecanica 2.jpeg',
-      'images/Metalmecanica 3.jpeg',
-      'images/Metalmecanica 4.jpeg',
       'images/Metalmecanica 5.jpeg',
       'images/Metalmecanica 6.jpeg',
-      'images/Metalmecanica 7.jpeg',
-      'images/Metalmecanica 8.jpeg'
+      'images/Metalmecanica 8.png'
     ],
     electric: [
       'images/Electrico 1.jpeg',
@@ -55,20 +51,25 @@ export const IMAGES = {
       'images/Electrico 3.jpeg',
       'images/Electrico 4.jpeg',
       'images/Electrico 5.png',
-      'images/Electrico 6.jpeg'
+      'images/Electrico 6.jpeg',
+      'images/malla 3.png',
+      'images/apantallamiento.png',
+      'images/incendios.png'
     ],
     earth: 'images/Movimiento_Tierras.png',
     topo: 'images/Topografia.png',
     machinery: 'images/Maquinaria.png',
     valves: [
-      'images/Valvulas.png',
       'images/Valvulas 1.jpg',
       'images/valvulas 2.jpg',
       'images/valvulas 3.jpg',
       'images/valvulas 4.jpg',
       'images/valvulas 5.jpg',
       'images/valvulas 6.jpg',
-      'images/valvulas 7.jpg'
+      'images/valvulas 7.jpg',
+      'images/Instrumentacion1.png',
+      'images/Instrumentacion2.png',
+      'images/Instrumentacion3.png'
     ],
     engineering: 'images/Ingenieria.png',
     concrete: 'images/concretera.png',

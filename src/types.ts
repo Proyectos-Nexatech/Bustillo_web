@@ -1,8 +1,8 @@
 
 export interface ServiceDetail {
   title: string;
-  description: string;
-  items: string[];
+  description?: string;
+  items?: string[];
   icon?: string;
 }
 
@@ -13,7 +13,7 @@ export interface Service {
   description: string;
   details: (string | ServiceDetail)[];
   icon: string;
-  category: 'civil' | 'industrial' | 'specialized' | 'machinery' | 'engineering';
+  category: 'civil' | 'industrial' | 'specialized' | 'machinery' | 'engineering' | 'instrumentation';
   image: string | string[];
 }
 

@@ -9,7 +9,7 @@ export default defineConfig({
   // Esto evita pantallas en blanco o errores 404 al subir a GitHub Pages.
   base: './', 
   server: {
-    port: 3000,
+    port: 5173,
     strictPort: false,
   }
 })

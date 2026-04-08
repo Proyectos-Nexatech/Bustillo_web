@@ -24,7 +24,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         {service.details.slice(0, 3).map((detail, idx) => (
           <li key={idx} className="text-xs text-slate-500 flex items-center">
             <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-2"></span>
-            {detail}
+            {typeof detail === 'string' ? detail : detail.title}
           </li>
         ))}
       </ul>
