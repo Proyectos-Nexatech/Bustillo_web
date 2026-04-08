@@ -67,9 +67,9 @@ export const IMAGES = {
       'images/valvulas 5.jpg',
       'images/valvulas 6.jpg',
       'images/valvulas 7.jpg',
-      'images/Instrumentacion1.png',
-      'images/Instrumentacion2.png',
-      'images/Instrumentacion3.png'
+      'images/Instrumentacion1.jpeg',
+      'images/Instrumentacion2.jpeg',
+      'images/Instrumentacion3.jpeg'
     ],
     engineering: 'images/Ingenieria.png',
     concrete: 'images/concretera.png',
