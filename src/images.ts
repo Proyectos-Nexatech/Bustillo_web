@@ -85,5 +85,6 @@ export const IMAGES = {
     paving: 'images/paving.jpg',
     dentalCenter: 'images/Imagen civil 5.jpg',
     ductwork: 'images/Instalacion Ducteria.jpg',
+    asphaltWorks: 'images/Imagen_asfalto1.png'
   }
 };

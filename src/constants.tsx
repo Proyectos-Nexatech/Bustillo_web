@@ -352,6 +352,13 @@ export const PROJECTS: Project[] = [
     location: 'CARTAGENA',
     client: 'KAESER',
     image: IMAGES.projects.ductwork
+  },
+  {
+    id: '7',
+    title: 'OBRAS DE REPARCEHEO EN ASFALTO-VIAS',
+    location: 'CORDOBA',
+    client: 'CERRO MATOSO S.A.',
+    image: IMAGES.projects.asphaltWorks
   }
 ];
 
