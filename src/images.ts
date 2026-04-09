@@ -54,7 +54,9 @@ export const IMAGES = {
       'images/Electrico 6.jpeg',
       'images/malla 3.png',
       'images/apantallamiento.png',
-      'images/incendios.png'
+      'images/incendios.png',
+      'images/CCTV.png',
+      'images/encerramiento.png'
     ],
     earth: 'images/Movimiento_Tierras.png',
     topo: 'images/Topografia.png',
