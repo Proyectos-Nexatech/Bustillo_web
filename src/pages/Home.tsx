@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { STATS, SERVICES, ICON_MAP } from '../constants';
+import { STATS, SERVICES, ICON_MAP, CLIENTS } from '../constants';
 import { IMAGES } from '../images';
 import { ChevronRight, Award, ShieldCheck } from 'lucide-react';
 
@@ -178,6 +178,40 @@ const Home: React.FC = () => {
             <Link to="/contacto" className="bg-red-bright text-white px-10 py-5 font-black text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl shadow-red-950/20">
               SOLICITAR COTIZACIÓN
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Clients Slider Section */}
+      <section className="py-16 bg-white overflow-hidden border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="flex items-center gap-4">
+            <div className="h-10 w-1.5 bg-red-bright"></div>
+            <h2 className="text-3xl md:text-4xl font-black text-maroon-corp uppercase tracking-tighter">NUESTROS CLIENTES</h2>
+          </div>
+        </div>
+        
+        <div className="relative flex overflow-x-hidden">
+          <div className="logo-slider py-8">
+            {[...CLIENTS, ...CLIENTS].map((client, idx) => (
+              <div key={idx} className="flex items-center justify-center px-12 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 min-w-[250px]">
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="h-12 md:h-16 w-auto object-contain"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    const parent = e.currentTarget.parentElement;
+                    if (parent && !parent.querySelector('span')) {
+                      const span = document.createElement('span');
+                      span.className = 'text-maroon-corp font-black text-sm uppercase tracking-widest text-center';
+                      span.innerText = client.name;
+                      parent.appendChild(span);
+                    }
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

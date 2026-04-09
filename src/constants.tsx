@@ -361,6 +361,25 @@ export const PROJECTS: Project[] = [
     image: IMAGES.projects.asphaltWorks
   }
 ];
+ 
+export const CLIENTS = [
+  { name: 'ProElectrica', logo: IMAGES.clients.proelectrica },
+  { name: 'Ecopetrol', logo: IMAGES.clients.ecopetrol },
+  { name: 'Gyplac', logo: IMAGES.clients.gyplac },
+  { name: 'Taghleef Industries', logo: IMAGES.clients.taghleef },
+  { name: 'Oiltanking', logo: IMAGES.clients.oiltanking },
+  { name: 'Mondi', logo: IMAGES.clients.mondi },
+  { name: 'YARA', logo: IMAGES.clients.yara },
+  { name: 'Orbia', logo: IMAGES.clients.orbia },
+  { name: 'Cerro Matoso', logo: IMAGES.clients.cerromatoso },
+  { name: 'Gecelca', logo: IMAGES.clients.gecelca },
+  { name: 'OCENSA', logo: IMAGES.clients.ocensa },
+  { name: 'Prodeco', logo: IMAGES.clients.prodeco },
+  { name: 'Carbomas', logo: IMAGES.clients.carbomas },
+  { name: 'ISA', logo: IMAGES.clients.isa },
+  { name: 'Cabot', logo: IMAGES.clients.cabot },
+  { name: 'Termo Candelaria', logo: IMAGES.clients.termocandelaria }
+];
 
 export const ICON_MAP: Record<string, React.ReactNode> = {
   HardHat: <HardHat className="w-8 h-8" />,
