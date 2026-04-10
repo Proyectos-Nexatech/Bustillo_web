@@ -194,22 +194,10 @@ const Home: React.FC = () => {
         <div className="relative flex overflow-x-hidden">
           <div className="logo-slider py-8">
             {[...CLIENTS, ...CLIENTS].map((client, idx) => (
-              <div key={idx} className="flex items-center justify-center px-12 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 min-w-[250px]">
-                <img 
-                  src={client.logo} 
-                  alt={client.name} 
-                  className="h-12 md:h-16 w-auto object-contain"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    const parent = e.currentTarget.parentElement;
-                    if (parent && !parent.querySelector('span')) {
-                      const span = document.createElement('span');
-                      span.className = 'text-maroon-corp font-black text-sm uppercase tracking-widest text-center';
-                      span.innerText = client.name;
-                      parent.appendChild(span);
-                    }
-                  }}
-                />
+              <div key={idx} className="flex items-center justify-center px-12 opacity-60 hover:opacity-100 transition-all duration-300 min-w-[250px] group">
+                <span className="text-maroon-corp font-black text-sm md:text-base uppercase tracking-[0.15em] text-center group-hover:text-red-bright transition-colors">
+                  {client.name}
+                </span>
               </div>
             ))}
           </div>
