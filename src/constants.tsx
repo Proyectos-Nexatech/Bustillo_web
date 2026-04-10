@@ -363,22 +363,23 @@ export const PROJECTS: Project[] = [
 ];
 
 export const CLIENTS = [
-  { name: 'ProElectrica' },
-  { name: 'Ecopetrol' },
-  { name: 'Gyplac' },
-  { name: 'Taghleef Industries' },
-  { name: 'Oiltanking' },
-  { name: 'Mondi' },
-  { name: 'YARA' },
-  { name: 'Orbia' },
-  { name: 'Cerro Matoso' },
-  { name: 'Gecelca' },
-  { name: 'OCENSA' },
-  { name: 'Prodeco' },
-  { name: 'Carbomas' },
-  { name: 'ISA' },
-  { name: 'Cabot Colombiana' },
-  { name: 'Termo Candelaria' }
+  { name: 'YARA', logo: IMAGES.clients.yara },
+  { name: 'Cabot Colombiana', logo: IMAGES.clients.cabot },
+  { name: 'ProElectrica', logo: IMAGES.clients.proelectrica },
+  { name: 'Orbia', logo: IMAGES.clients.orbia },
+  { name: 'Gyplac', logo: IMAGES.clients.gyplac },
+  { name: 'Mondi', logo: IMAGES.clients.mondi },
+  { name: 'Termo Candelaria', logo: IMAGES.clients.termo_candelaria },
+  { name: 'KAESER', logo: IMAGES.clients.kaeser },
+  { name: 'Ecopetrol', logo: IMAGES.clients.ecopetrol },
+  { name: 'Taghleef Industries', logo: IMAGES.clients.taghleef },
+  { name: 'Oiltanking', logo: IMAGES.clients.oiltanking },
+  { name: 'Cerro Matoso', logo: IMAGES.clients.cerromatoso },
+  { name: 'Gecelca', logo: IMAGES.clients.gecelca },
+  { name: 'OCENSA', logo: IMAGES.clients.ocensa },
+  { name: 'Carbomax', logo: IMAGES.clients.carbomax },
+  { name: 'Prodeco', logo: IMAGES.clients.prodeco },
+  { name: 'ISA', logo: IMAGES.clients.isa }
 ];
 
 export const ICON_MAP: Record<string, React.ReactNode> = {

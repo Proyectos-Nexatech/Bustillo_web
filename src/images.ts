@@ -88,5 +88,24 @@ export const IMAGES = {
     dentalCenter: 'images/Imagen civil 5.jpg',
     ductwork: 'images/Instalacion Ducteria.jpg',
     asphaltWorks: 'images/Imagen_asfalto1.jpg'
+  },
+  clients: {
+    yara: 'images/yara.png',
+    cabot: 'images/cabot.png',
+    proelectrica: 'images/proelectrica.png',
+    orbia: 'images/orbia.jpg',
+    gyplac: 'images/gyplac.webp',
+    mondi: 'images/mondi.webp',
+    termo_candelaria: 'images/Termocandelaria.webp',
+    kaeser: 'images/kaeser.webp',
+    ecopetrol: 'images/ecopetrol.png',
+    taghleef: 'images/taghleef.webp',
+    oiltanking: 'images/oiltanking.png',
+    cerromatoso: 'images/cerromatoso.webp',
+    gecelca: 'images/gecelca.webp',
+    ocensa: 'images/ocensa.png',
+    carbomax: 'images/carbomax.png',
+    isa: 'images/isa.png',
+    prodeco: 'images/prodeco.jpg'
   }
 };

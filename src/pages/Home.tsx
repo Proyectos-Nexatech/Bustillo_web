@@ -194,10 +194,18 @@ const Home: React.FC = () => {
         <div className="relative flex overflow-x-hidden">
           <div className="logo-slider py-8">
             {[...CLIENTS, ...CLIENTS].map((client, idx) => (
-              <div key={idx} className="flex items-center justify-center px-12 opacity-60 hover:opacity-100 transition-all duration-300 min-w-[250px] group">
-                <span className="text-maroon-corp font-black text-sm md:text-base uppercase tracking-[0.15em] text-center group-hover:text-red-bright transition-colors">
-                  {client.name}
-                </span>
+              <div key={idx} className="flex items-center justify-center px-12 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 min-w-[250px] group">
+                {client.logo ? (
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    className="h-12 md:h-16 w-auto object-contain transition-transform group-hover:scale-110"
+                  />
+                ) : (
+                  <span className="text-maroon-corp font-black text-sm md:text-base uppercase tracking-[0.15em] text-center group-hover:text-red-bright transition-colors">
+                    {client.name}
+                  </span>
+                )}
               </div>
             ))}
           </div>
