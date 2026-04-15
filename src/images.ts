@@ -102,7 +102,10 @@ export const IMAGES = {
       'images/kaeser3.jpeg',
       'images/kaeser4.jpeg'
     ],
-    osmoc: 'images/osmoc.jpg'
+    osmoc: [
+      'images/osmoc1.jpg',
+      'images/osmoc2.jpg'
+    ]
   },
   clients: {
     yara: 'images/yara.png',
