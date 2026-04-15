@@ -104,7 +104,9 @@ export const IMAGES = {
     ],
     osmoc: [
       'images/osmoc1.jpg',
-      'images/osmoc2.jpg'
+      'images/osmoc2.jpg',
+      'images/osmoc3.jpg',
+      'images/osmoc4.jpg'
     ]
   },
   clients: {
