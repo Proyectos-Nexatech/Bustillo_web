@@ -81,13 +81,25 @@ export const IMAGES = {
   },
   projects: {
     // Fotos de la galería de proyectos - Nombres descriptivos para evitar confusión
-    heapLeaching: 'images/heap_leaching_cordoba.png',
+    heapLeaching: [
+      'images/heapleaching1.jpg',
+      'images/heapleaching2.jpg',
+      'images/heapleaching3.jpg',
+      'images/heapleaching4.jpg'
+    ],
     maintenance: 'images/Gecelca.jpg',
     library: 'images/library.jpg',
     paving: 'images/paving.jpg',
     dentalCenter: 'images/Imagen civil 5.jpg',
     ductwork: 'images/Instalacion Ducteria.jpg',
-    asphaltWorks: 'images/Imagen_asfalto1.jpg'
+    asphaltWorks: 'images/Imagen_asfalto1.jpg',
+    kaeser: [
+      'images/kaeser1.jpeg',
+      'images/kaeser 2.jpeg',
+      'images/kaeser3.jpeg',
+      'images/kaeser4.jpeg'
+    ],
+    osmoc: 'images/osmoc.jpg'
   },
   clients: {
     yara: 'images/yara.png',

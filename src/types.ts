@@ -22,7 +22,7 @@ export interface Project {
   title: string;
   location: string;
   client: string;
-  image: string;
+  image: string | string[];
 }
 
 export interface Stat {

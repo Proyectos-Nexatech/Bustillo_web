@@ -27,7 +27,10 @@ import {
   ShieldCheck,
   Thermometer,
   FileCheck,
-  BadgeCheck
+  BadgeCheck,
+  Tractor,
+  Layers,
+  Navigation
 } from 'lucide-react';
 import { Service, Project, Stat } from './types';
 import { IMAGES } from './images';
@@ -102,6 +105,72 @@ export const SERVICES: Service[] = [
           'Instalaciones hidrosanitarias internas'
         ],
         icon: 'Waves'
+      }
+    ]
+  },
+  {
+    id: 'earth',
+    title: 'Movimiento de Tierra y Vias',
+    category: 'civil',
+    icon: 'Tractor',
+    description: 'Ejecución integral de movimientos de tierra para proyectos de gran escala.',
+    image: IMAGES.services.earth,
+    details: [
+      {
+        title: 'Movimiento de Tierras',
+        description: 'Ejecución integral de movimientos de tierra para proyectos de gran escala con maquinaria especializada.',
+        items: [
+          'Proyectos industriales y residenciales',
+          'Excavaciones y rellenos',
+          'Conformación de taludes',
+          'Nivelación de terrenos'
+        ],
+        icon: 'Tractor'
+      },
+      {
+        title: 'Vías en Concreto Hidráulico',
+        description: 'Construcción de pavimentos rígidos diseñados para alta durabilidad y tránsito pesado.',
+        items: [
+          'Pavimentación de vías principales',
+          'Vías internas industriales',
+          'Placas huella',
+          'Andenes y bordillos'
+        ],
+        icon: 'Navigation'
+      },
+      {
+        title: 'Vías en Asfalto',
+        description: 'Soluciones en pavimento flexible para diferentes tipos de tráfico y necesidades viales.',
+        items: [
+          'Construcción de vías nuevas',
+          'Reparcheo y mantenimiento',
+          'Carpeta asfáltica',
+          'Fresado y recuperación'
+        ],
+        icon: 'Layers'
+      },
+      {
+        title: 'Vías Secundarias y Terciarias',
+        description: 'Intervención y mejoramiento de redes viales para garantizar la conectividad rural y de acceso.',
+        items: [
+          'Adecuación y mantenimiento',
+          'Afirmado y compactación',
+          'Obras de drenaje y cunetas',
+          'Estabilización de suelos'
+        ],
+        icon: 'Map'
+      },
+      {
+        title: 'Alquiler de Maquinaria',
+        items: [
+          'Excavadoras y retrocargadores',
+          'Bulldozer y Dobletroques',
+          'Mixers y bombas de concreto',
+          'Equipos de compactación',
+          'Plantas eléctricas e iluminación',
+          'Contenedores tipo oficina'
+        ],
+        icon: 'Truck'
       }
     ]
   },
@@ -351,7 +420,7 @@ export const PROJECTS: Project[] = [
     title: 'Ductería extracción de gases compresor FSD 450',
     location: 'CARTAGENA',
     client: 'KAESER',
-    image: IMAGES.projects.ductwork
+    image: IMAGES.projects.kaeser
   },
   {
     id: '7',
@@ -359,6 +428,13 @@ export const PROJECTS: Project[] = [
     location: 'CORDOBA',
     client: 'CERRO MATOSO S.A.',
     image: IMAGES.projects.asphaltWorks
+  },
+  {
+    id: '8',
+    title: 'OSMOC',
+    location: 'PLANETA RICA',
+    client: 'OSMOC',
+    image: IMAGES.projects.osmoc
   }
 ];
 
@@ -410,6 +486,9 @@ export const ICON_MAP: Record<string, React.ReactNode> = {
   Thermometer: <Thermometer className="w-8 h-8" />,
   FileCheck: <FileCheck className="w-8 h-8" />,
   BadgeCheck: <BadgeCheck className="w-8 h-8" />,
+  Tractor: <Tractor className="w-8 h-8" />,
+  Navigation: <Navigation className="w-8 h-8" />,
+  Layers: <Layers className="w-8 h-8" />,
   Valve: (
     <svg
       viewBox="0 0 24 24"

@@ -1,7 +1,60 @@
 
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { MapPin, Briefcase } from 'lucide-react';
+import { MapPin, Briefcase, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const ImageCarousel: React.FC<{ images: string[], alt: string }> = ({ images, alt }) => {
+  const [current, setCurrent] = React.useState(0);
+
+  const next = () => setCurrent((prev) => (prev + 1) % images.length);
+  const prev = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
+
+  return (
+    <div className="relative group w-full h-[500px] overflow-hidden">
+      <div
+        className="flex transition-transform duration-700 ease-in-out h-full"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {images.map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={`${alt} ${i + 1}`}
+            className="w-full h-full object-cover shrink-0"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          />
+        ))}
+      </div>
+
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={(e) => { e.preventDefault(); prev(); }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-maroon-corp text-white flex items-center justify-center rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 z-20"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button
+            onClick={(e) => { e.preventDefault(); next(); }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-maroon-corp text-white flex items-center justify-center rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 z-20"
+          >
+            <ChevronRight size={20} />
+          </button>
+
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`w-2 h-2 rounded-full transition-all ${current === i ? 'bg-white w-6' : 'bg-white/40'}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
 const Projects: React.FC = () => {
   return (
@@ -23,16 +76,19 @@ const Projects: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {PROJECTS.map((project) => (
             <div key={project.id} className="group relative overflow-hidden bg-zinc-900 shadow-2xl border border-zinc-800">
-              {/* Background Image with improved error handling */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110 bg-zinc-800"
-                onError={(e) => {
-                  // If image fails, hide it to reveal the dark background so text remains readable
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
+              {/* Image or Carousel */}
+              {Array.isArray(project.image) ? (
+                <ImageCarousel images={project.image} alt={project.title} />
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110 bg-zinc-800"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              )}
 
               {/* Gradient Overlay - ensuring text readability */}
               <div className="absolute inset-0 bg-gradient-to-t from-maroon-corp via-maroon-corp/40 to-transparent opacity-90"></div>
