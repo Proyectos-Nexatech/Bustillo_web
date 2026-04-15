@@ -87,7 +87,10 @@ export const IMAGES = {
       'images/heapleaching3.jpg',
       'images/heapleaching4.jpg'
     ],
-    maintenance: 'images/Gecelca.jpg',
+    maintenance: [
+      'images/gecelca1.jpg',
+      'images/gecelca2.jpg'
+    ],
     library: 'images/library.jpg',
     paving: 'images/paving.jpg',
     dentalCenter: 'images/Imagen civil 5.jpg',
