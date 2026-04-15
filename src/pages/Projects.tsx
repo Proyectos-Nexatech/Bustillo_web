@@ -107,13 +107,15 @@ const Projects: React.FC = () => {
                       <p className="text-sm font-bold uppercase tracking-tighter">{project.location}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 text-white/80">
-                    <Briefcase size={20} className="text-red-bright" />
-                    <div>
-                      <p className="text-[10px] font-black text-white/50 uppercase tracking-widest">Cliente</p>
-                      <p className="text-sm font-bold uppercase tracking-tighter">{project.client}</p>
+                  {project.client && (
+                    <div className="flex items-center gap-3 text-white/80">
+                      <Briefcase size={20} className="text-red-bright" />
+                      <div>
+                        <p className="text-[10px] font-black text-white/50 uppercase tracking-widest">Cliente</p>
+                        <p className="text-sm font-bold uppercase tracking-tighter">{project.client}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>

@@ -21,7 +21,7 @@ export interface Project {
   id: string;
   title: string;
   location: string;
-  client: string;
+  client?: string;
   image: string | string[];
 }
 

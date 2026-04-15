@@ -391,7 +391,6 @@ export const PROJECTS: Project[] = [
     id: '2',
     title: 'Mantenimiento Hidráulico Gecelca',
     location: 'Puerto Libertador',
-    client: 'Gecelca',
     image: IMAGES.projects.maintenance
   },
   {
@@ -447,7 +446,6 @@ export const PROJECTS: Project[] = [
     id: '10',
     title: 'MANTENIMIENTO EN PARADA DE PLANTA SECADOR INDUSTRIAL',
     location: 'MAMONAL CARTAGENA',
-    client: 'CABOT',
     image: IMAGES.projects.dryerMaintenance
   }
 ];
