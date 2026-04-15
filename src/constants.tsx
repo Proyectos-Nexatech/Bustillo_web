@@ -442,6 +442,13 @@ export const PROJECTS: Project[] = [
     location: 'CAUCASIA',
     client: 'ALCALDÍA DE CAUCASIA',
     image: IMAGES.projects.municipalLibrary
+  },
+  {
+    id: '10',
+    title: 'MANTENIMIENTO EN PARADA DE PLANTA SECADOR INDUSTRIAL',
+    location: 'MAMONAL CARTAGENA',
+    client: 'CABOT',
+    image: IMAGES.projects.dryerMaintenance
   }
 ];
 

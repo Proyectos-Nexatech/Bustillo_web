@@ -111,6 +111,13 @@ export const IMAGES = {
     municipalLibrary: [
       'images/biblioteca1.jpg',
       'images/biblioteca2.jpg'
+    ],
+    dryerMaintenance: [
+      'images/cabot1.jpeg',
+      'images/cabot2.jpeg',
+      'images/cabot3.jpeg',
+      'images/cabot4.jpeg',
+      'images/cabot5.jpeg'
     ]
   },
   clients: {
