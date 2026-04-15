@@ -435,6 +435,13 @@ export const PROJECTS: Project[] = [
     location: 'PLANETA RICA',
     client: 'OSMOC',
     image: IMAGES.projects.osmoc
+  },
+  {
+    id: '9',
+    title: 'CONSTRUCCION BIBLIOTECA MUNICIPAL ETAPA 2',
+    location: 'CAUCASIA',
+    client: 'ALCALDÍA DE CAUCASIA',
+    image: IMAGES.projects.municipalLibrary
   }
 ];
 

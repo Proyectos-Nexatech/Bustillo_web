@@ -107,6 +107,10 @@ export const IMAGES = {
       'images/osmoc2.jpg',
       'images/osmoc3.jpg',
       'images/osmoc4.jpg'
+    ],
+    municipalLibrary: [
+      'images/biblioteca1.jpg',
+      'images/biblioteca2.jpg'
     ]
   },
   clients: {
