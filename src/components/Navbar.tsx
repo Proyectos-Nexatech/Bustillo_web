@@ -56,10 +56,18 @@ const Navbar: React.FC = () => {
             ))}
             <Link
               to="/contacto"
-              className="bg-maroon-corp hover:bg-red-bright text-white px-6 py-2 rounded-sm font-black text-[12px] uppercase tracking-widest transition-all active:scale-95 shadow-lg shadow-red-900/10"
+              className="bg-maroon-corp hover:bg-red-bright text-white px-4 xl:px-6 py-2 rounded-sm font-black text-[11px] xl:text-[12px] uppercase tracking-widest transition-all active:scale-95 shadow-lg shadow-red-900/10"
             >
               COTIZAR
             </Link>
+            <a
+              href="https://valve-quotation.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-bright hover:bg-maroon-corp text-white px-4 xl:px-6 py-2 rounded-sm font-black text-[11px] xl:text-[12px] uppercase tracking-widest transition-all active:scale-95 shadow-lg shadow-red-900/10"
+            >
+              COTIZAR VALVULAS
+            </a>
           </div>
 
          {/* Mobile/Tablet Menu Button - Visible until 'lg' */}
@@ -93,7 +101,7 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4 px-3">
+            <div className="pt-4 px-3 space-y-2">
               <Link
                 to="/contacto"
                 onClick={() => setIsOpen(false)}
@@ -101,6 +109,15 @@ const Navbar: React.FC = () => {
               >
                 SOLICITAR COTIZACIÓN
               </Link>
+              <a
+                href="https://valve-quotation.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="block text-center bg-red-bright text-white py-4 rounded-sm font-black text-xs uppercase tracking-widest"
+              >
+                COTIZAR VALVULAS
+              </a>
             </div>
           </div>
         </div>
