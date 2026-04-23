@@ -132,6 +132,9 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20 md:space-y-32">
             {SERVICES.map((service, index) => {
+              // Exclude supervision and management from main list as they have their own sections at the bottom
+              if (service.id === 'supervision' || service.id === 'management') return null;
+
               // Map service IDs to the keys in IMAGES.services
               const serviceKey = service.id as keyof typeof IMAGES.services;
               const imageSrc = IMAGES.services[serviceKey] || IMAGES.services.civil; // Fallback

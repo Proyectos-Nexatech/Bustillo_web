@@ -87,18 +87,33 @@ const About: React.FC = () => {
                 <div className="absolute top-0 right-0 w-8 h-full bg-maroon-corp translate-x-full"></div>
               </div>
               <p className="text-slate-700 leading-relaxed text-xl font-bold italic border-l-4 border-maroon-corp pl-8">
-                Proveer soluciones integrales de ingeniería civil, metalmecanica, eléctrica e instrumentacion para el sector industrial y gubernamental, garantizando la sostenibilidad, el cumplimiento normativo y el bienestar de nuestras comunidades bajo estándares internacionales.
+                Somos una organización especializada en la construcción y ejecución de obras civiles,
+                arquitectónicas, eléctricas y metalmecánicas, orientada a satisfacer las necesidades de
+                nuestros clientes mediante altos estándares de calidad, cumplimiento, innovación y
+                seguridad. Promovemos el mejoramiento continuo de nuestros procesos, la
+                implementación de prácticas de Seguridad y Salud en el Trabajo (SST) que protejan la
+                vida y el bienestar de nuestros colaboradores, y el desarrollo integral de nuestro talento
+                humano, actuando con responsabilidad social y compromiso con la sostenibilidad, para
+                generar valor a la empresa, nuestros trabajadores y la sociedad.
               </p>
             </div>
 
             <div className="relative">
               {/* Same header style for "VISIÓN" */}
               <div className="bg-maroon-corp text-white px-8 py-3 inline-block font-black text-3xl uppercase tracking-widest mb-10 relative">
-                VISIÓN 2030
+                VISIÓN
                 <div className="absolute top-0 right-0 w-8 h-full bg-red-bright translate-x-full"></div>
               </div>
               <p className="text-slate-700 leading-relaxed text-xl font-bold italic border-l-4 border-red-bright pl-8">
-                Ser reconocidos para el año 2030 como una empresa líder en soluciones de ingeniería en el norte de Colombia, destacandose por nuestra capacidad de innovación y un compromiso inquebrantable con el desarrollo sostenible del país.
+                Para el año 2030, consolidarnos como una empresa líder y confiable en la región Caribe
+                colombiana, con presencia en diferentes departamentos, reconocida por la ejecución de
+                obras civiles, arquitectónicas y metalmecánicas con altos estándares de calidad,
+                cumplimiento e innovación. Nos destacamos por la implementación de nuevas
+                tecnologías, el compromiso con la Seguridad y Salud en el Trabajo (SST) y la protección
+                del medio ambiente, así como por fomentar una cultura organizacional basada en la
+                inclusión, el respeto, la motivación y el bienestar de nuestros colaboradores, generando
+                altos niveles de satisfacción en nuestros clientes y aportando al desarrollo sostenible de
+                las regiones donde operamos.
               </p>
             </div>
           </div>

@@ -30,7 +30,12 @@ import {
   BadgeCheck,
   Tractor,
   Layers,
-  Navigation
+  Navigation,
+  BarChart3,
+  Calendar,
+  Play,
+  Search,
+  Compass
 } from 'lucide-react';
 import { Service, Project, Stat } from './types';
 import { IMAGES } from './images';
@@ -376,6 +381,66 @@ export const SERVICES: Service[] = [
       { title: 'Ingenieria Electrica', icon: 'Zap' },
       { title: 'Instrumentacion y Control', icon: 'Cpu' }
     ]
+  },
+  {
+    id: 'management',
+    title: 'Gestión de Proyectos',
+    category: 'specialized',
+    icon: 'Layers',
+    description: 'Operamos bajo los lineamientos del Project Management Institute (PMI), integrando herramientas digitales avanzadas y software especializado.',
+    image: IMAGES.services.management,
+    details: [
+      {
+        title: 'Alcance',
+        description: 'Estructura de Desglose de Trabajo (WBS) y Control de Entregables.',
+        icon: 'Map'
+      },
+      {
+        title: 'Tiempo',
+        description: 'Planificación Integrada de Cronograma y Seguimiento de Curva S.',
+        icon: 'Calendar'
+      },
+      {
+        title: 'Costo',
+        description: 'Análisis y Control Presupuestario con Valor Ganado.',
+        icon: 'BarChart3'
+      },
+      {
+        title: 'Calidad',
+        description: 'Gestión y seguimiento de planes de calidad.',
+        icon: 'ShieldCheck'
+      }
+    ]
+  },
+  {
+    id: 'supervision',
+    title: 'Interventoría Técnica Multidisciplinaria',
+    category: 'specialized',
+    icon: 'FileCheck',
+    description: 'Control Riguroso y Sistemático para el Aseguramiento de Calidad, Cumplimiento Normativo y Mitigación de Riesgos Operativos.',
+    image: IMAGES.services.engineering,
+    details: [
+      {
+        title: 'Obras Civiles',
+        description: 'Aseguramiento de cimentaciones, estructuras de concreto, metálicas, geotecnia y control de materiales.',
+        icon: 'HardHat'
+      },
+      {
+        title: 'Montaje Mecánico y Tuberías',
+        description: 'Verificación de alineación de equipos rotativos y estáticos, control de soldadura (ENDs) y especificaciones técnicas.',
+        icon: 'Settings'
+      },
+      {
+        title: 'Sistemas Eléctricos',
+        description: 'Supervisión de redes de media y baja tensión, tableros, y comisionamiento pre-operativo (RETIE).',
+        icon: 'Zap'
+      },
+      {
+        title: 'Instrumentación y Control',
+        description: 'Validación de lazos de control, calibración de instrumentos y puesta en marcha de sistemas SCADA/DCS.',
+        icon: 'Cpu'
+      }
+    ]
   }
 ];
 
@@ -451,17 +516,14 @@ export const PROJECTS: Project[] = [
 ];
 
 export const CLIENTS = [
-  { name: 'YARA', logo: IMAGES.clients.yara },
+  { name: 'LHOIST', logo: IMAGES.clients.lhoist },
+  { name: 'SYNGENTA', logo: IMAGES.clients.syngenta },
   { name: 'Cabot Colombiana', logo: IMAGES.clients.cabot },
-  { name: 'ProElectrica', logo: IMAGES.clients.proelectrica },
   { name: 'Orbia', logo: IMAGES.clients.orbia },
   { name: 'Gyplac', logo: IMAGES.clients.gyplac },
   { name: 'Mondi', logo: IMAGES.clients.mondi },
   { name: 'Termo Candelaria', logo: IMAGES.clients.termo_candelaria },
   { name: 'KAESER', logo: IMAGES.clients.kaeser },
-  { name: 'Ecopetrol', logo: IMAGES.clients.ecopetrol },
-  { name: 'Taghleef Industries', logo: IMAGES.clients.taghleef },
-  { name: 'Oiltanking', logo: IMAGES.clients.oiltanking },
   { name: 'Cerro Matoso', logo: IMAGES.clients.cerromatoso },
   { name: 'Gecelca', logo: IMAGES.clients.gecelca },
   { name: 'OCENSA', logo: IMAGES.clients.ocensa },
@@ -501,6 +563,11 @@ export const ICON_MAP: Record<string, React.ReactNode> = {
   Tractor: <Tractor className="w-8 h-8" />,
   Navigation: <Navigation className="w-8 h-8" />,
   Layers: <Layers className="w-8 h-8" />,
+  BarChart3: <BarChart3 className="w-8 h-8" />,
+  Calendar: <Calendar className="w-8 h-8" />,
+  Play: <Play className="w-8 h-8" />,
+  Search: <Search className="w-8 h-8" />,
+  Compass: <Compass className="w-8 h-8" />,
   Valve: (
     <svg
       viewBox="0 0 24 24"

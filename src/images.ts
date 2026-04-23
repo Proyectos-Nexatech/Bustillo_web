@@ -137,6 +137,8 @@ export const IMAGES = {
     ocensa: 'images/ocensa.png',
     carbomax: 'images/carbomax.png',
     isa: 'images/isa.png',
-    prodeco: 'images/prodeco.jpg'
+    prodeco: 'images/prodeco.jpg',
+    lhoist: 'images/lhoist.png',
+    syngenta: 'images/syngenta.png'
   }
 };
