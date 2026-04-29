@@ -87,14 +87,10 @@ const About: React.FC = () => {
                 <div className="absolute top-0 right-0 w-8 h-full bg-maroon-corp translate-x-full"></div>
               </div>
               <p className="text-slate-700 leading-relaxed text-xl font-bold italic border-l-4 border-maroon-corp pl-8">
-                Somos una organización especializada en la construcción y ejecución de obras civiles,
-                arquitectónicas, eléctricas y metalmecánicas, orientada a satisfacer las necesidades de
-                nuestros clientes mediante altos estándares de calidad, cumplimiento, innovación y
-                seguridad. Promovemos el mejoramiento continuo de nuestros procesos, la
-                implementación de prácticas de Seguridad y Salud en el Trabajo (SST) que protejan la
-                vida y el bienestar de nuestros colaboradores, y el desarrollo integral de nuestro talento
-                humano, actuando con responsabilidad social y compromiso con la sostenibilidad, para
-                generar valor a la empresa, nuestros trabajadores y la sociedad.
+                Somos una organización especializada en la ejecución de obras civiles, arquitectónicas, eléctricas, instrumentación y metalmecánicas,
+                orientada a satisfacer las necesidades de nuestros clientes mediante soluciones eficientes, seguras y oportunas. Operamos bajo altos estándares de calidad, cumplimiento
+                normativo, innovación y mejora continua, promoviendo la Seguridad y Salud en el Trabajo, la protección del medio ambiente y el desarrollo integral de nuestro talento humano. Actuamos con ética,
+                responsabilidad social y enfoque sostenible, generando valor para nuestros clientes, colaboradores y demás partes interesadas.
               </p>
             </div>
 
@@ -105,15 +101,9 @@ const About: React.FC = () => {
                 <div className="absolute top-0 right-0 w-8 h-full bg-red-bright translate-x-full"></div>
               </div>
               <p className="text-slate-700 leading-relaxed text-xl font-bold italic border-l-4 border-red-bright pl-8">
-                Para el año 2030, consolidarnos como una empresa líder y confiable en la región Caribe
-                colombiana, con presencia en diferentes departamentos, reconocida por la ejecución de
-                obras civiles, arquitectónicas y metalmecánicas con altos estándares de calidad,
-                cumplimiento e innovación. Nos destacamos por la implementación de nuevas
-                tecnologías, el compromiso con la Seguridad y Salud en el Trabajo (SST) y la protección
-                del medio ambiente, así como por fomentar una cultura organizacional basada en la
-                inclusión, el respeto, la motivación y el bienestar de nuestros colaboradores, generando
-                altos niveles de satisfacción en nuestros clientes y aportando al desarrollo sostenible de
-                las regiones donde operamos.
+                Para el año 2030, ser una empresa líder y confiable en la región Caribe colombiana, con presencia estratégica a nivel nacional, reconocida por la excelencia en la ejecución de obras civiles,
+                arquitectónicas, eléctricas, instrumentación y metalmecánicas. Nos distinguiremos por la eficacia de nuestro Sistema Integrado de Gestión, el uso de tecnologías innovadoras, el cumplimiento de los
+                requisitos aplicables y una cultura organizacional enfocada en la seguridad, el bienestar, la sostenibilidad y la satisfacción de nuestros clientes.
               </p>
             </div>
           </div>

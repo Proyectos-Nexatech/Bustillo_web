@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
             {/* CAMBIO LÍNEA 39: Ancho máximo max-w-2xl para mejorar la lectura en pantallas anchas de tablets */}
             <p className="text-base md:text-xl lg:text-2xl text-slate-100 mb-10 font-bold uppercase tracking-tight max-w-2xl">
-              Especialistas en Obras Civiles, Metálicas, Eléctricas, Concreto y Topografía con excelencia técnica.
+              SOMOS ESPECIALISTAS EN OBRAS CIVILES, METALMECANICAS, ELECTRICAS E INSTRUMETACION INDUSTRIAL.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
