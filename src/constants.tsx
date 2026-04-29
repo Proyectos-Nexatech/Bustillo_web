@@ -42,7 +42,7 @@ import { IMAGES } from './images';
 
 export const STATS: Stat[] = [
   { label: 'Años de Experiencia', value: '30' },
-  { label: 'Grandes Clientes', value: '7+' },
+  { label: 'Grandes Clientes', value: '10+' },
   { label: 'Sedes en Colombia', value: '2' },
   { label: 'Proyectos Exitosos', value: '100+' }
 ];
@@ -517,11 +517,7 @@ export const PROJECTS: Project[] = [
 
 export const CLIENTS = [
   { name: 'LHOIST', logo: IMAGES.clients.lhoist },
-  { name: 'SYNGENTA', logo: IMAGES.clients.syngenta },
   { name: 'Cabot Colombiana', logo: IMAGES.clients.cabot },
-  { name: 'Orbia', logo: IMAGES.clients.orbia },
-  { name: 'Gyplac', logo: IMAGES.clients.gyplac },
-  { name: 'Mondi', logo: IMAGES.clients.mondi },
   { name: 'Termo Candelaria', logo: IMAGES.clients.termo_candelaria },
   { name: 'KAESER', logo: IMAGES.clients.kaeser },
   { name: 'Cerro Matoso', logo: IMAGES.clients.cerromatoso },
