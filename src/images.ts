@@ -100,7 +100,8 @@ export const IMAGES = {
       'images/kaeser1.jpeg',
       'images/kaeser 2.jpeg',
       'images/kaeser3.jpeg',
-      'images/kaeser4.jpeg'
+      'images/kaeser4.jpeg',
+      'images/Electrico 7.jpeg'
     ],
     osmoc: [
       'images/osmoc1.jpg',
