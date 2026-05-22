@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                 <MapPin className="text-maroon-corp shrink-0" size={20} />
                 <div className="text-sm text-slate-400">
                   <span className="text-white block font-black uppercase text-[10px] tracking-widest mb-1">Cartagena</span>
-                  Bellevista Cra 56B #7A-69, Bolívar.
+                  Bellavista Cra 56B #7A-69, Bolívar.
                 </div>
               </div>
             </div>
