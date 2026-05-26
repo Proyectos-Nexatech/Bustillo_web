@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     const formErrors = validateForm();
@@ -75,20 +75,37 @@ const Contact: React.FC = () => {
     setErrors({});
     setStatus('submitting');
 
-    // Simulate sending email/request
-    setTimeout(() => {
-      try {
-        const existingRequests = JSON.parse(localStorage.getItem('contact_requests') || '[]');
-        existingRequests.push({
-          ...formData,
-          date: new Date().toISOString(),
-        });
-        localStorage.setItem('contact_requests', JSON.stringify(existingRequests));
-      } catch (err) {
-        console.error('Error saving contact request:', err);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: '7912d0df-baad-4f2f-ab17-42b4d175a806',
+          subject: `Nuevo contacto web de ${formData.name}`,
+          from_name: 'Bustillo Web Contacto',
+          Nombre: formData.name,
+          Empresa: formData.company || 'N/A',
+          Correo: formData.email,
+          Teléfono: formData.phone,
+          Servicio: formData.service,
+          Mensaje: formData.message,
+        })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus('success');
+      } else {
+        console.error('Error enviando formulario:', result);
+        setStatus('error');
       }
-      setStatus('success');
-    }, 1800);
+    } catch (err) {
+      console.error('Error en la petición al enviar formulario:', err);
+      setStatus('error');
+    }
   };
 
   return (
@@ -334,6 +351,12 @@ const Contact: React.FC = () => {
                         </p>
                       )}
                     </div>
+
+                    {status === 'error' && (
+                      <div className="bg-red-50 text-red-600 p-4 border border-red-200 text-xs font-bold uppercase tracking-wider mb-6 flex items-center gap-2 shadow-sm">
+                        <AlertCircle size={16} /> Hubo un problema enviando el mensaje. Por favor intenta de nuevo.
+                      </div>
+                    )}
 
                     <button
                       type="submit"
