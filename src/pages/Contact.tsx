@@ -207,7 +207,7 @@ const Contact: React.FC = () => {
                     </button>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-8 md:space-y-10">
+                  <form onSubmit={handleSubmit} className="space-y-8 md:space-y-10" noValidate>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                       <div className="relative">
                         <label className="block text-[10px] font-black text-slate-400 mb-2 uppercase tracking-[0.2em]">Nombre Completo</label>
